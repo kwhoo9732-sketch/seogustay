@@ -1,0 +1,234 @@
+{
+  "checkedAt": "2026-10-28",
+  "places": [
+    {
+      "id": "uncheon",
+      "name": "운천저수지",
+      "lat": 35.147986,
+      "lng": 126.85477,
+      "coordinateNote": "광주관광 공식 상세페이지 지도 마커 좌표이며 시설 출입구를 보장하지 않음",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/tour/info/park/003.cs?act=view&infoId=272",
+      "sourceName": "광주관광 공식 관광정보",
+      "verifiedAt": "2026-10-28",
+      "category": "nature",
+      "address": "전남광주통합특별시 서구 운천로 165 일대",
+      "description": "저수지 둘레에 산책로와 정자가 놓인 도심 속 휴식 공간입니다. 주변 카페와 음식점을 함께 둘러보며 동네의 일상을 만나보세요.",
+      "tags": [
+        "수변 산책",
+        "동네 카페"
+      ],
+      "image": "./assets/uncheon-spring.webp",
+      "neighborhood": "쌍촌동",
+      "photoId": "uncheon-spring",
+      "imageAlt": "운천저수지의 호수와 벚꽃, 주변 아파트 풍경"
+    },
+    {
+      "id": "yangdong",
+      "name": "양동시장",
+      "lat": 35.154287666,
+      "lng": 126.9022421427,
+      "coordinateNote": "광주관광 공식 상세페이지 지도 마커 좌표이며 시설 출입구를 보장하지 않음",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/tour/info/shopping/002.cs?act=view&infoId=1330",
+      "sourceName": "광주관광 공식 관광정보",
+      "verifiedAt": "2026-10-28",
+      "category": "market",
+      "address": "전남광주통합특별시 서구 천변좌로 238",
+      "description": "다양한 먹거리와 생활 물품을 만날 수 있는 전통시장입니다. 시장 구경에 통닭 등 지역 먹거리를 더해 활기찬 서구의 일상을 경험해보세요.",
+      "tags": [
+        "전통시장",
+        "먹거리"
+      ],
+      "image": "./assets/yangdong-market.webp",
+      "neighborhood": "양동",
+      "photoId": "yangdong-market",
+      "imageAlt": "양동시장 안 통닭 가게의 외관"
+    },
+    {
+      "id": "convention",
+      "name": "김대중컨벤션센터",
+      "lat": 35.1467445,
+      "lng": 126.8409323,
+      "coordinateNote": "광주관광 공식 상세페이지 지도 마커 좌표이며 시설 출입구를 보장하지 않음",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/tour/info/sports.cs?act=view&infoId=359",
+      "sourceName": "광주관광 공식 관광정보",
+      "verifiedAt": "2026-10-28",
+      "category": "culture",
+      "address": "전남광주통합특별시 서구 상무누리로 30",
+      "description": "박람회와 전시, 회의 등 다양한 행사가 열리는 공간입니다. 관심 있는 전시·행사를 찾아 일상에 새로운 경험을 더해보세요.",
+      "tags": [
+        "전시",
+        "박람회"
+      ],
+      "image": "./assets/convention-1.webp",
+      "neighborhood": "치평동",
+      "photoId": "convention-1",
+      "imageAlt": "김대중컨벤션센터 건물 전경"
+    },
+    {
+      "id": "pungam",
+      "name": "풍암호수",
+      "lat": 35.1299485,
+      "lng": 126.8707485,
+      "coordinateNote": "광주관광 공식 상세페이지 지도 마커 좌표이며 시설 출입구를 보장하지 않음",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/tour/info/park/003.cs?act=view&infoId=279",
+      "sourceName": "광주관광 공식 관광정보",
+      "verifiedAt": "2026-10-28",
+      "category": "nature",
+      "address": "전남광주통합특별시 서구 월드컵서로 71-3",
+      "description": "호숫가 산책로와 장미원, 쉼터가 어우러진 수변공원입니다. 일상 속 산책과 계절 풍경을 함께 즐길 수 있습니다.",
+      "tags": [
+        "호수 산책",
+        "장미원"
+      ],
+      "image": null,
+      "neighborhood": "풍암동"
+    },
+    {
+      "id": "sangmu",
+      "name": "상무시민공원",
+      "lat": 35.153607,
+      "lng": 126.841631,
+      "coordinateNote": "광주관광 공식 상세페이지 지도 마커 좌표이며 시설 출입구를 보장하지 않음",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/tour/info/park/003.cs?act=view&infoId=1168",
+      "sourceName": "광주관광 공식 관광정보",
+      "verifiedAt": "2026-10-28",
+      "category": "nature",
+      "address": "전남광주통합특별시 서구 상무공원로 101",
+      "description": "산책과 운동을 즐길 수 있는 상무지구의 공원입니다. 어린이 놀이시설과 여러 체육시설을 갖춰 가족의 여가 공간으로 이용됩니다.",
+      "tags": [
+        "가족 나들이",
+        "생활 체육"
+      ],
+      "image": null,
+      "neighborhood": "치평동"
+    },
+    {
+      "id": "may18",
+      "name": "5·18기념공원",
+      "lat": 35.1570531,
+      "lng": 126.858156,
+      "coordinateNote": "광주관광 공식 상세페이지 지도 마커 좌표이며 시설 출입구를 보장하지 않음",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/tour/info/history.cs?act=view&infoId=218",
+      "sourceName": "광주관광 공식 관광정보",
+      "verifiedAt": "2026-10-28",
+      "category": "culture",
+      "address": "전남광주통합특별시 서구 내방로 152",
+      "description": "5·18민주화운동을 기억하고 그 뜻을 이어가는 기념공원입니다. 추모공간과 기념시설, 녹지가 함께 조성되어 있습니다.",
+      "tags": [
+        "역사",
+        "공원 산책"
+      ],
+      "image": null,
+      "neighborhood": "쌍촌동"
+    },
+    {
+      "id": "gugak",
+      "name": "빛고을국악전수관",
+      "lat": 35.1320275,
+      "lng": 126.8598243,
+      "coordinateNote": "광주관광 공식 상세페이지 지도 마커 좌표이며 시설 출입구를 보장하지 않음",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/tour/info/sports.cs?act=view&infoId=313",
+      "sourceName": "광주관광 공식 관광정보",
+      "verifiedAt": "2026-10-28",
+      "category": "culture",
+      "address": "전남광주통합특별시 서구 풍금로 182",
+      "description": "공연장과 전시실을 갖춘 국악 문화공간입니다. 남도의 전통가락과 국악 관련 자료를 가까이에서 접할 수 있습니다.",
+      "tags": [
+        "국악",
+        "공연"
+      ],
+      "image": null,
+      "neighborhood": "금호동"
+    },
+    {
+      "id": "seochang",
+      "name": "서창한옥문화관",
+      "lat": 35.1154157,
+      "lng": 126.8306597,
+      "coordinateNote": "광주관광 공식 상세페이지 지도 마커 좌표이며 시설 출입구를 보장하지 않음",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/tour/info/lodge.cs?act=view&infoId=70",
+      "sourceName": "광주관광 공식 관광정보",
+      "verifiedAt": "2026-10-28",
+      "category": "culture",
+      "address": "전남광주통합특별시 서구 눌재로 420",
+      "description": "서창의 한옥 풍경과 전통문화를 접할 수 있는 공간입니다. 인근 만귀정과 함께 둘러보며 도심과 다른 서구의 표정을 만나볼 수 있습니다.",
+      "tags": [
+        "한옥",
+        "전통문화"
+      ],
+      "image": null,
+      "neighborhood": "서창동"
+    },
+    {
+      "id": "mangwi",
+      "name": "만귀정",
+      "lat": 35.1205732,
+      "lng": 126.8337225,
+      "coordinateNote": "광주관광 공식 상세페이지 지도 마커 좌표이며 시설 출입구를 보장하지 않음",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/tour/info/culture.cs?act=view&infoId=648",
+      "sourceName": "광주관광 공식 관광정보",
+      "verifiedAt": "2026-10-28",
+      "category": "culture",
+      "address": "전남광주통합특별시 서구 동하길 10",
+      "description": "세하동 동하마을의 연못 위에 자리한 정자입니다. 다리로 이어진 정자와 연못 풍경을 감상하며 서구의 전통 공간을 둘러볼 수 있습니다.",
+      "tags": [
+        "정자",
+        "역사 산책"
+      ],
+      "image": null,
+      "neighborhood": "세하동"
+    }
+  ],
+  "photos": [
+    {
+      "slug": "uncheon-spring",
+      "title": "운천저수지의 봄",
+      "source": "광주문화관광 사진공유 서비스",
+      "copyright": "공공누리 제2유형: 출처표시 + 상업적 이용금지",
+      "licenseUrl": "https://tour.gwangju.go.kr/home/image/share/imgList.cs?m=199",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/image/share/imgView.cs?m=199&act=view&siIdx=22&gubun=NA1",
+      "fileUrl": "https://tour.gwangju.go.kr/uploads/share/image/202103120449450980.jpg",
+      "downloadUrl": "https://tour.gwangju.go.kr/home/image/share/imgDown.cs?m=199&siIdx=22&downOption=do03",
+      "bytes": 1064299,
+      "contentType": "application/x-msdownload;charset=UTF-8",
+      "assetFilenameYear": 2021,
+      "publicationYear": null,
+      "yearNote": "사진 파일명에 연도가 있으나 페이지에 별도 촬영일·발행일 표시는 확인되지 않음. 최신 촬영사진으로 표시하지 말 것.",
+      "attribution": "사진: 광주문화관광 사진공유 서비스, 「운천저수지의 봄」 · 공공누리 제2유형(출처표시·상업적 이용금지)",
+      "used": true
+    },
+    {
+      "slug": "yangdong-market",
+      "title": "양동시장",
+      "source": "광주문화관광 사진공유 서비스",
+      "copyright": "공공누리 제2유형: 출처표시 + 상업적 이용금지",
+      "licenseUrl": "https://tour.gwangju.go.kr/home/image/share/imgList.cs?m=199",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/image/share/imgView.cs?m=199&act=view&siIdx=175&gubun=T2",
+      "fileUrl": "https://tour.gwangju.go.kr/uploads/share/image/202306090341047210.JPG",
+      "downloadUrl": "https://tour.gwangju.go.kr/home/image/share/imgDown.cs?m=199&siIdx=175&downOption=do03",
+      "bytes": 1272654,
+      "contentType": "application/x-msdownload;charset=UTF-8",
+      "assetFilenameYear": 2023,
+      "publicationYear": null,
+      "yearNote": "사진 파일명에 연도가 있으나 페이지에 별도 촬영일·발행일 표시는 확인되지 않음. 최신 촬영사진으로 표시하지 말 것.",
+      "attribution": "사진: 광주문화관광 사진공유 서비스, 「양동시장」 · 공공누리 제2유형(출처표시·상업적 이용금지)",
+      "used": true
+    },
+    {
+      "slug": "convention-1",
+      "title": "김대중컨벤션센터1",
+      "publicationYear": null,
+      "assetFilenameYear": 2023,
+      "source": "광주문화관광 사진공유 서비스",
+      "copyright": "공공누리 제2유형: 출처표시 + 상업적 이용금지",
+      "licenseUrl": "https://tour.gwangju.go.kr/home/image/share/imgList.cs?m=199",
+      "sourceUrl": "https://tour.gwangju.go.kr/home/image/share/imgView.cs?m=199&act=view&siIdx=180&gubun=FE",
+      "fileUrl": "https://tour.gwangju.go.kr/uploads/share/image/202308171005083790.jpg",
+      "downloadUrl": "https://tour.gwangju.go.kr/home/image/share/imgDown.cs?m=199&siIdx=180&downOption=do03",
+      "bytes": 9731933,
+      "yearNote": "파일명에 연도가 있으나 별도 촬영일·발행일 미표시",
+      "attribution": "사진: 광주문화관광 사진공유 서비스, 「김대중컨벤션센터1」 · 공공누리 제2유형(출처표시·상업적 이용금지)",
+      "used": true
+    }
+  ]
+}

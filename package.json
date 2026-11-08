@@ -1,0 +1,15 @@
+{
+  "name": "seogu-stay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "생활 조건으로 집과 동네를 찾는 서구STAY · GitHub + Vercel 배포판",
+  "author": "전남광주통합특별시 서구 기획실 정의형",
+  "type": "module",
+  "engines": { "node": "24.x" },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env.local scripts/dev.mjs",
+    "start": "node --env-file-if-exists=.env.local scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

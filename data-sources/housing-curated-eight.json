@@ -1,0 +1,192 @@
+{
+  "checkedAt": "2026-10-28",
+  "regionDisplay": "전남광주통합특별시 서구",
+  "sourceSummary": "국토교통부 실거래가 공개자료를 재가공해 제공하는 공개 웹페이지(쏙집·DHOME)에서 직접 확인한 매매 거래 사례입니다. 각 단지의 첫 거래 사례는 두 사이트에서 교차 확인했습니다. 국토교통부 API를 직접 연동하거나 전체 거래를 수집한 자료는 아닙니다.",
+  "sourceType": "secondary",
+  "priceUnit": "만원",
+  "areaType": "전용면적",
+  "officialSourceUrl": "https://rt.molit.go.kr/pt/xls/xls.do?mobileAt=",
+  "officialApiInfoUrl": "https://www.data.go.kr/data/15126469/openapi.do",
+  "notes": [
+    "단지별 선택된 거래 사례이며 현재 매물의 호가·단지 전체 시세·평균가격을 뜻하지 않습니다.",
+    "계약일·전용면적·층이 서로 다른 거래이므로 단순 가격만으로 비교하지 않습니다.",
+    "신고의 추가·수정·해제로 원자료가 바뀔 수 있습니다. 실제 주거 검토 시 국토교통부 원자료를 다시 확인합니다.",
+    "해제로 표시된 거래는 수록하지 않았습니다. 이 자료는 조회한 페이지에 나타난 정보 기준으로 이후 해제 여부는 자동 갱신하지 않습니다.",
+    "위경도는 쏙집 상세페이지의 카카오맵 링크에 포함된 단지 대표 좌표입니다. 공식 지오코딩이나 현장 확인으로 검증하지 않았으며 개별 동·출입구 위치와 다를 수 있습니다.",
+    "과거 거래는 같은 전용면적의 일부 사례만 수록했습니다. 시계열 전체·월평균·상승률로 해석하지 않습니다."
+  ],
+  "apartments": [
+    {
+      "id": "pungam-woomi",
+      "name": "우미광장",
+      "neighborhood": "풍암동",
+      "address": "전남광주통합특별시 서구 풍암동 1132",
+      "roadAddress": "전남광주통합특별시 서구 풍암순환로 183",
+      "lat": 35.126559,
+      "lng": 126.881243,
+      "coordinateSource": "https://korea-rich.com/apt/29140-132/",
+      "coordinateType": "secondary-map-link",
+      "builtYear": 2000,
+      "sourceUrl": "https://korea-rich.com/apt/29140-132/",
+      "sourceType": "secondary",
+      "sourceName": "쏙집 · 국토교통부 자료 재가공",
+      "crossCheckUrl": "https://dhome.kr/silgeorae.php?m=3&p=3&r=12240",
+      "transactions": [
+        {"date":"2026-10-20","area":59.96,"floor":1,"priceMan":17000,"sourceUrl":"https://korea-rich.com/apt/29140-132/"},
+        {"date":"2026-10-09","area":59.96,"floor":13,"priceMan":17700,"sourceUrl":"https://korea-rich.com/apt/29140-132/"},
+        {"date":"2026-09-29","area":59.96,"floor":10,"priceMan":18200,"sourceUrl":"https://korea-rich.com/apt/29140-132/"},
+        {"date":"2026-09-18","area":59.96,"floor":12,"priceMan":17900,"sourceUrl":"https://korea-rich.com/apt/29140-132/"}
+      ]
+    },
+    {
+      "id": "geumho-jongwon",
+      "name": "종원팰리스빌",
+      "neighborhood": "금호동",
+      "address": "전남광주통합특별시 서구 금호동 240-2",
+      "roadAddress": "전남광주통합특별시 서구 화개1로 59-2",
+      "lat": 35.129898,
+      "lng": 126.852439,
+      "coordinateSource": "https://korea-rich.com/apt/29140-153/",
+      "coordinateType": "secondary-map-link",
+      "builtYear": 2002,
+      "sourceUrl": "https://korea-rich.com/apt/29140-153/",
+      "sourceType": "secondary",
+      "sourceName": "쏙집 · 국토교통부 자료 재가공",
+      "crossCheckUrl": "https://dhome.kr/silgeorae.php?m=3&p=3&r=12240",
+      "transactions": [
+        {"date":"2026-10-20","area":84.98,"floor":1,"priceMan":27200,"sourceUrl":"https://korea-rich.com/apt/29140-153/"},
+        {"date":"2026-10-03","area":84.98,"floor":3,"priceMan":26800,"sourceUrl":"https://korea-rich.com/apt/29140-153/"},
+        {"date":"2026-10-02","area":84.98,"floor":9,"priceMan":28500,"sourceUrl":"https://korea-rich.com/apt/29140-153/"},
+        {"date":"2026-09-23","area":84.98,"floor":12,"priceMan":32500,"sourceUrl":"https://korea-rich.com/apt/29140-153/"}
+      ]
+    },
+    {
+      "id": "chipyeong-mayluz",
+      "name": "상무광명메이루즈",
+      "neighborhood": "치평동",
+      "address": "전남광주통합특별시 서구 치평동 1249",
+      "roadAddress": "전남광주통합특별시 서구 시청로 27",
+      "lat": 35.151008,
+      "lng": 126.850837,
+      "coordinateSource": "https://korea-rich.com/apt/29140-373/",
+      "coordinateType": "secondary-map-link",
+      "builtYear": 2016,
+      "sourceUrl": "https://korea-rich.com/apt/29140-373/",
+      "sourceType": "secondary",
+      "sourceName": "쏙집 · 국토교통부 자료 재가공",
+      "crossCheckUrl": "https://dhome.kr/silgeorae.php?m=3&p=3&r=12240",
+      "transactions": [
+        {"date":"2026-10-21","area":84.96,"floor":24,"priceMan":40000,"sourceUrl":"https://korea-rich.com/apt/29140-373/"},
+        {"date":"2026-04-26","area":84.96,"floor":23,"priceMan":39000,"sourceUrl":"https://korea-rich.com/apt/29140-373/"},
+        {"date":"2026-02-26","area":84.96,"floor":12,"priceMan":41000,"sourceUrl":"https://korea-rich.com/apt/29140-373/"}
+      ]
+    },
+    {
+      "id": "hwajeong-centralpark",
+      "name": "더샵염주센트럴파크",
+      "neighborhood": "화정동",
+      "address": "전남광주통합특별시 서구 화정동 1712",
+      "roadAddress": "전남광주통합특별시 서구 월드컵4강로 27",
+      "lat": 35.139886,
+      "lng": 126.874667,
+      "coordinateSource": "https://korea-rich.com/apt/29140-414/",
+      "coordinateType": "secondary-map-link",
+      "builtYear": 2022,
+      "sourceUrl": "https://korea-rich.com/apt/29140-414/",
+      "sourceType": "secondary",
+      "sourceName": "쏙집 · 국토교통부 자료 재가공",
+      "crossCheckUrl": "https://dhome.kr/silgeorae.php?m=3&q=%EB%8D%94%EC%83%B5%EC%97%BC%EC%A3%BC%EC%84%BC%ED%8A%B8%EB%9F%B4%ED%8C%8C%ED%81%AC&r=12240",
+      "transactions": [
+        {"date":"2026-10-24","area":59.98,"floor":24,"priceMan":47500,"sourceUrl":"https://korea-rich.com/apt/29140-414/"},
+        {"date":"2026-08-29","area":59.98,"floor":22,"priceMan":49000,"sourceUrl":"https://korea-rich.com/apt/29140-414/"},
+        {"date":"2026-07-29","area":59.98,"floor":6,"priceMan":45000,"sourceUrl":"https://korea-rich.com/apt/29140-414/"},
+        {"date":"2026-07-23","area":59.98,"floor":17,"priceMan":46500,"sourceUrl":"https://korea-rich.com/apt/29140-414/"}
+      ]
+    },
+    {
+      "id": "ssangchon-eliche",
+      "name": "상무엘리체",
+      "neighborhood": "쌍촌동",
+      "address": "전남광주통합특별시 서구 쌍촌동 1380",
+      "roadAddress": "전남광주통합특별시 서구 월드컵4강로197번길 12",
+      "lat": 35.15478,
+      "lng": 126.868455,
+      "coordinateSource": "https://korea-rich.com/apt/29140-386/",
+      "coordinateType": "secondary-map-link",
+      "builtYear": 2018,
+      "sourceUrl": "https://korea-rich.com/apt/29140-386/",
+      "sourceType": "secondary",
+      "sourceName": "쏙집 · 국토교통부 자료 재가공",
+      "crossCheckUrl": "https://dhome.kr/silgeorae.php?m=3&p=2&r=12240",
+      "transactions": [
+        {"date":"2026-10-22","area":85.0,"floor":13,"priceMan":46800,"sourceUrl":"https://korea-rich.com/apt/29140-386/"},
+        {"date":"2026-05-12","area":85.0,"floor":15,"priceMan":41700,"sourceUrl":"https://korea-rich.com/apt/29140-386/"},
+        {"date":"2026-04-14","area":85.0,"floor":3,"priceMan":42000,"sourceUrl":"https://korea-rich.com/apt/29140-386/"}
+      ]
+    },
+    {
+      "id": "dongcheon-centralpark",
+      "name": "동천센트럴파크",
+      "neighborhood": "동천동",
+      "address": "전남광주통합특별시 서구 동천동 506",
+      "roadAddress": "전남광주통합특별시 서구 동천로 11",
+      "lat": 35.169391,
+      "lng": 126.858238,
+      "coordinateSource": "https://korea-rich.com/apt/29140-301/",
+      "coordinateType": "secondary-map-link",
+      "builtYear": 2007,
+      "sourceUrl": "https://korea-rich.com/apt/29140-301/",
+      "sourceType": "secondary",
+      "sourceName": "쏙집 · 국토교통부 자료 재가공",
+      "crossCheckUrl": "https://dhome.kr/silgeorae.php?r=12240",
+      "transactions": [
+        {"date":"2026-10-25","area":84.99,"floor":1,"priceMan":32500,"sourceUrl":"https://korea-rich.com/apt/29140-301/"},
+        {"date":"2026-08-29","area":84.99,"floor":12,"priceMan":35000,"sourceUrl":"https://korea-rich.com/apt/29140-301/"},
+        {"date":"2026-05-17","area":84.99,"floor":9,"priceMan":30000,"sourceUrl":"https://korea-rich.com/apt/29140-301/"},
+        {"date":"2026-05-16","area":84.99,"floor":8,"priceMan":29500,"sourceUrl":"https://korea-rich.com/apt/29140-301/"}
+      ]
+    },
+    {
+      "id": "nongseong-sk",
+      "name": "농성SKVIEWCentral",
+      "neighborhood": "농성동",
+      "address": "전남광주통합특별시 서구 농성동 702",
+      "roadAddress": "전남광주통합특별시 서구 상무대로1147번길 16",
+      "lat": 35.155307,
+      "lng": 126.886477,
+      "coordinateSource": "https://korea-rich.com/apt/29140-393/",
+      "coordinateType": "secondary-map-link",
+      "builtYear": 2019,
+      "sourceUrl": "https://korea-rich.com/apt/29140-393/",
+      "sourceType": "secondary",
+      "sourceName": "쏙집 · 국토교통부 자료 재가공",
+      "crossCheckUrl": "https://dhome.kr/silgeorae.php?m=3&q=%EB%86%8D%EC%84%B1SKVIEWCentral&r=12240",
+      "transactions": [
+        {"date":"2026-10-24","area":84.98,"floor":8,"priceMan":55000,"sourceUrl":"https://korea-rich.com/apt/29140-393/"},
+        {"date":"2026-10-20","area":84.98,"floor":11,"priceMan":52750,"sourceUrl":"https://korea-rich.com/apt/29140-393/"},
+        {"date":"2026-10-10","area":84.98,"floor":6,"priceMan":52000,"sourceUrl":"https://korea-rich.com/apt/29140-393/"},
+        {"date":"2026-09-15","area":84.98,"floor":2,"priceMan":50000,"sourceUrl":"https://korea-rich.com/apt/29140-393/"}
+      ]
+    },
+    {
+      "id": "mareuk-yangwoo",
+      "name": "상무양우내안애",
+      "neighborhood": "마륵동",
+      "address": "전남광주통합특별시 서구 마륵동 812",
+      "roadAddress": "전남광주통합특별시 서구 백석길 22-14",
+      "lat": 35.141623,
+      "lng": 126.851059,
+      "coordinateSource": "https://korea-rich.com/apt/29140-402/",
+      "coordinateType": "secondary-map-link",
+      "builtYear": 2020,
+      "sourceUrl": "https://korea-rich.com/apt/29140-402/",
+      "sourceType": "secondary",
+      "sourceName": "쏙집 · 국토교통부 자료 재가공",
+      "crossCheckUrl": "https://dhome.kr/silgeorae.php?m=3&q=%EC%83%81%EB%AC%B4%EC%96%91%EC%9A%B0%EB%82%B4%EC%95%88%EC%95%A0&r=12240",
+      "transactions": [
+        {"date":"2026-10-25","area":84.9,"floor":8,"priceMan":52000,"sourceUrl":"https://korea-rich.com/apt/29140-402/"},
+        {"date":"2026-05-28","area":84.9,"floor":16,"priceMan":51500,"sourceUrl":"https://korea-rich.com/apt/29140-402/"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-28",
+  "dataDate": "2026-10-26",
+  "dataDateBasis": "공개 게시글 본문: 해당 자료는 2026년 10월 26일 추출한 자료",
+  "documentTitle": "K-apt 관리비공개의무단지 기본정보(2026.10.26.)",
+  "boardUrl": "https://www.k-apt.go.kr/web/board/webReference/boardView.do?seq=136041&boardSecret=0&boardType=03&pageNo=1&scodeT=01",
+  "boardAccessMethod": "공개 자료실의 listForm POST로 열람. 로그인하지 않았다.",
+  "fileListUrl": "https://www.k-apt.go.kr/web/board/webReference/fileListData.do?seq=BOARD_FILE",
+  "downloads": [
+    {
+      "originalFileName": "20261026_단지_기본정보.xlsx",
+      "file": "kapt-basic-20261026.xlsx",
+      "bytes": 12392907,
+      "sourceUrl": "https://www.k-apt.go.kr/cmm/file/BOARD/fileDownload.do?key=1&fileName=20261026_%EB%8B%A8%EC%A7%80_%EA%B8%B0%EB%B3%B8%EC%A0%95%EB%B3%B4.xlsx&_cb=1793175678195",
+      "contentType": null,
+      "contentDisposition": null
+    }
+  ]
+}

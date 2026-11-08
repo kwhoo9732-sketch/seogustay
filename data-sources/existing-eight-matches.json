@@ -1,0 +1,106 @@
+[
+  {
+    "existingId": "pungam-woomi",
+    "existingName": "우미광장",
+    "existingAddress": "전남광주통합특별시 서구 풍암동 1132",
+    "sourceIds": [
+      "seogu-15038901-0121"
+    ],
+    "sourceNames": [
+      "우미광장아파트"
+    ],
+    "basis": "법정동명 + 지번 본번·부번의 정확 일치. 지역 표시명만 제거하며 행정코드는 변환하지 않았다.",
+    "status": "unique_exact_parcel_match"
+  },
+  {
+    "existingId": "geumho-jongwon",
+    "existingName": "종원팰리스빌",
+    "existingAddress": "전남광주통합특별시 서구 금호동 240-2",
+    "sourceIds": [
+      "seogu-15038901-0149"
+    ],
+    "sourceNames": [
+      "종원팰리스빌아파트"
+    ],
+    "basis": "법정동명 + 지번 본번·부번의 정확 일치. 지역 표시명만 제거하며 행정코드는 변환하지 않았다.",
+    "status": "unique_exact_parcel_match"
+  },
+  {
+    "existingId": "chipyeong-mayluz",
+    "existingName": "상무광명메이루즈",
+    "existingAddress": "전남광주통합특별시 서구 치평동 1249",
+    "sourceIds": [
+      "seogu-15038901-0211"
+    ],
+    "sourceNames": [
+      "상무광명메이루즈"
+    ],
+    "basis": "법정동명 + 지번 본번·부번의 정확 일치. 지역 표시명만 제거하며 행정코드는 변환하지 않았다.",
+    "status": "unique_exact_parcel_match"
+  },
+  {
+    "existingId": "hwajeong-centralpark",
+    "existingName": "더샵염주센트럴파크",
+    "existingAddress": "전남광주통합특별시 서구 화정동 1712",
+    "sourceIds": [
+      "seogu-15038901-0222"
+    ],
+    "sourceNames": [
+      "더샵 염주센트럴파크"
+    ],
+    "basis": "법정동명 + 지번 본번·부번의 정확 일치. 지역 표시명만 제거하며 행정코드는 변환하지 않았다.",
+    "status": "unique_exact_parcel_match"
+  },
+  {
+    "existingId": "ssangchon-eliche",
+    "existingName": "상무엘리체",
+    "existingAddress": "전남광주통합특별시 서구 쌍촌동 1380",
+    "sourceIds": [
+      "seogu-15038901-0215"
+    ],
+    "sourceNames": [
+      "상무엘리체"
+    ],
+    "basis": "법정동명 + 지번 본번·부번의 정확 일치. 지역 표시명만 제거하며 행정코드는 변환하지 않았다.",
+    "status": "unique_exact_parcel_match"
+  },
+  {
+    "existingId": "dongcheon-centralpark",
+    "existingName": "동천센트럴파크",
+    "existingAddress": "전남광주통합특별시 서구 동천동 506",
+    "sourceIds": [
+      "seogu-15038901-0174"
+    ],
+    "sourceNames": [
+      "동천센트럴파크"
+    ],
+    "basis": "법정동명 + 지번 본번·부번의 정확 일치. 지역 표시명만 제거하며 행정코드는 변환하지 않았다.",
+    "status": "unique_exact_parcel_match"
+  },
+  {
+    "existingId": "nongseong-sk",
+    "existingName": "농성SKVIEWCentral",
+    "existingAddress": "전남광주통합특별시 서구 농성동 702",
+    "sourceIds": [
+      "seogu-15038901-0199"
+    ],
+    "sourceNames": [
+      "농성 SK VIEW Central"
+    ],
+    "basis": "법정동명 + 지번 본번·부번의 정확 일치. 지역 표시명만 제거하며 행정코드는 변환하지 않았다.",
+    "status": "unique_exact_parcel_match"
+  },
+  {
+    "existingId": "mareuk-yangwoo",
+    "existingName": "상무양우내안애",
+    "existingAddress": "전남광주통합특별시 서구 마륵동 812",
+    "sourceIds": [
+      "seogu-15038901-0202"
+    ],
+    "sourceNames": [
+      "상무양우내안애"
+    ],
+    "basis": "법정동명 + 지번 본번·부번의 정확 일치. 지역 표시명만 제거하며 행정코드는 변환하지 않았다.",
+    "status": "unique_exact_parcel_match"
+  }
+]

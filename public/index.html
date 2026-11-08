@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#254f43">
+  <meta name="description" content="내가 원하는 일상에서 살고 싶은 집을 찾아요. 산책, 학교, 문화생활과 공간 등 내게 중요한 조건으로 서구의 집을 찾고, 그 집의 거래가격을 살펴보세요.">
+  <meta property="og:title" content="서구stay — 내가 원하는 일상에서, 살고 싶은 집을 찾아요">
+  <meta property="og:description" content="원하는 생활을 고르고, 집과 동네를 발견하고, 그 집의 가격을 이해해요. 전남광주통합특별시 서구 주거·생활 가이드.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/vendor/leaflet.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./schools.css">
+  <link rel="stylesheet" href="./needs.css">
+  <link rel="stylesheet" href="./catalog.css">
+  <link rel="stylesheet" href="./stay.css">
+  <title>서구stay | 내가 원하는 일상에서, 살고 싶은 집을 찾아요</title>
+  <script src="./assets/vendor/leaflet.js" defer></script>
+  <script src="./matching.js" defer></script>
+  <script src="./app.js" defer></script>
+  <script src="./guide.js" defer></script>
+</head>
+<body>
+  <a href="#needs" class="skip-link">나의 생활 조건 선택으로 바로가기</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#" class="brand" aria-label="서구stay 처음으로"><svg class="brand-mark" viewBox="0 0 32 38" aria-hidden="true"><path d="M4 34V17a12 12 0 0 1 24 0v17H4Z" fill="none" stroke="currentColor" stroke-width="3"/><path d="M10 27l6-6 6 6v7H10Z" fill="currentColor"/><circle cx="23" cy="7" r="5" fill="#e6ad65" stroke="#fbfbf7" stroke-width="2"/></svg><span>서구<span class="brand-stay">stay</span><span class="brand-dot">.</span></span></a>
+      <nav class="main-nav" aria-label="주 메뉴"><a href="#stay-guide" class="active">Solar AI 가이드 <span class="nav-new">NEW</span></a><a href="#needs">맞는 집 찾기</a><a href="#education">학군·학교</a><a href="#discover">동네의 발견</a><a href="#day-in-seogu">서구에서 하루</a></nav>
+      <button class="saved-header" id="open-saved" type="button" aria-label="관심 단지 보기"><span data-icon="heart"></span><span>관심 단지</span><span class="count-pill" id="saved-count">0</span></button>
+    </div>
+  </header>
+  <main>
+
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-visual"><div class="hero-photo-wrap"><img id="hero-image" class="hero-photo" src="./assets/uncheon-spring.webp" alt="운천저수지의 호수와 벚꽃, 주변 아파트 풍경" fetchpriority="high"><div class="photo-location"><span data-icon="pin"></span><span id="hero-place-name">운천저수지 · 서구의 풍경</span><button type="button" data-open="sources" aria-label="사진 출처 보기"><span data-icon="info"></span></button></div></div></div>
+      <div class="hero-copy"><p class="location-eyebrow"><span class="status-dot"></span> 전남광주통합특별시 서구 · 주거·생활 가이드</p><p class="hero-kicker">YOUR EVERYDAY, A LITTLE BETTER.</p><h1 id="hero-title">집보다 먼저,<br><span class="hero-emphasis">살고 싶은 일상을.</span></h1><p class="hero-description">호수를 걷는 아침, 학교가 가까운 동네.<br>당신이 바라는 하루에서 집 찾기를 시작하세요.</p><div class="hero-actions"><a href="#stay-guide" class="button primary">나의 일상으로 집 찾기<span data-icon="arrow-right"></span></a><a href="#discover" class="hero-secondary-link">서구의 매력 만나기<span data-icon="arrow-up-right"></span></a></div></div>
+      <div class="hero-side-note" aria-hidden="true"><span>01 — SEOGU MOMENTS</span><strong>A place<br>to call home.</strong><span class="hero-note-line"></span></div>
+      <div class="hero-bottom"><span>LIVE SLOW. STAY CLOSE.</span><a href="#stay-guide" aria-label="Solar AI 가이드로 이동">SCROLL TO DISCOVER <span>↓</span></a></div>
+    </section>
+    <div class="stay-intro container"><p>어떤 집에 살고 싶은지보다,<br><strong>어떤 하루를 보내고 싶은지.</strong></p><div><span>집과 동네를 함께</span><p>공동주택 목록부터 학교와 명소까지.<br>확인한 자료로 나만의 생활권을 살펴보세요.</p></div><a href="#explore">전체 단지 둘러보기 <span>↗</span></a></div>
+    <section class="stay-guide container" id="stay-guide" aria-labelledby="guide-title">
+      <div class="guide-heading"><div><p class="eyebrow">A LITTLE HELP FOR YOUR NEXT HOME</p><h2 id="guide-title">바라는 일상을 말해주세요.<span class="solar-badge">Solar AI</span></h2><p>여러 조건을 고르는 대신, 마음속에 그린 하루를 한 문장으로.</p></div><span class="guide-status" id="guide-status" role="status">연결 확인 중</span></div>
+      <div class="guide-workspace"><div class="guide-story"><span class="guide-orbit" aria-hidden="true">✳</span><p class="eyebrow">YOUR STAY CONCIERGE</p><h3>“아이 학교도,<br>매일의 산책도<br><em>가까웠으면 해요.”</em></h3><p>AI가 생활 조건을 정리하면,<br>확인된 자료에서 그 이유를 찾아드려요.</p><div class="guide-story-foot"><span>✦</span><p>취향은 자유롭게.<br>추천의 근거는 구체적으로.</p></div></div>
+      <div class="guide-conversation"><div class="guide-welcome"><span class="guide-avatar" aria-hidden="true">✳</span><div><strong>서구stay 생활 가이드</strong><p>어떤 일상을 꿈꾸세요? 동네·예산·학교·산책 여건을 함께 말씀해 주세요.</p></div></div><div id="guide-thread" class="guide-thread" aria-live="polite" aria-atomic="false"></div><form id="guide-form"><label for="guide-input" class="sr-only">원하는 집과 생활 조건</label><div class="guide-input-wrap"><textarea id="guide-input" rows="3" maxlength="600" placeholder="예: 초등학교와 공원이 가까운 집을 찾고 있어요." required></textarea><button id="guide-send" type="submit" aria-label="입력한 생활 조건으로 찾기"><span data-icon="arrow-up-right"></span></button></div><div class="guide-form-foot"><span id="guide-mode">입력 문장은 AI 답변을 위해 Upstage로 전송됩니다.</span><button type="button" id="guide-clear">대화 지우기</button></div></form><div class="guide-examples" aria-label="생활 조건 입력 예시"><span>이렇게 시작해 보세요</span><button type="button" data-guide-example="초등학교와 공원이 가까운 집을 찾고 있어요.">아이와 함께 사는 집 ↗</button><button type="button" data-guide-example="풍암동에서 호수 산책을 즐기고 싶어요.">호수 가까운 일상 ↗</button><button type="button" data-guide-example="문화공간 가까운 곳에서 전용 84제곱미터 이상의 집을 찾고 싶어요.">넓은 집과 문화생활 ↗</button></div><p class="guide-disclaimer">AI가 조건을 잘못 이해할 수 있어요. 결과의 비교 기준을 확인해 주세요. 현재 매물·실시간 시세나 학교 배정을 확정하지 않습니다.</p></div></div>
+    </section>
+    <div class="section-divider container"><span>OR, PICK WHAT MATTERS TO YOU</span><span>직접 골라도 좋아요</span></div>
+
+    <section class="needs-section container" id="needs" aria-labelledby="needs-title">
+      <div class="section-heading"><div><p class="eyebrow">FIRST, YOUR EVERYDAY</p><h2 id="needs-title">어떤 일상을 원하시나요?</h2><p>내게 중요한 조건을 최대 3가지 골라주세요. 선택한 조건에 맞는 집부터 살펴볼 수 있어요.</p></div><span class="needs-counter" id="needs-counter" aria-live="polite">0 / 3 선택</span></div>
+      <div id="needs-grid" class="needs-grid" role="group" aria-label="중요한 생활 조건 선택"></div>
+      <div class="needs-footer"><div><p id="needs-summary" role="status">원하는 생활을 선택해 보세요.</p><small>조건은 언제든 바꿀 수 있어요. 선택 없이 전체 단지를 둘러봐도 좋아요.</small><button type="button" class="text-button" id="clear-needs" hidden>선택 비우기</button></div><button type="button" class="button primary" id="find-my-home">집 둘러보기<span data-icon="arrow-right"></span></button></div>
+      <p class="needs-footnote">공식 공동주택 목록을 바탕으로 확인된 조건을 비교합니다. 자료가 없는 조건은 미확인으로 표시합니다. 거리는 직선거리이며 학교 배정·실제 통학거리와 다릅니다. <button type="button" data-open="match-rules">조건을 비교하는 기준</button></p>
+    </section>
+
+    <section class="explore-section container" id="explore" aria-labelledby="explore-title">
+      <div class="section-heading"><div><p class="eyebrow">A PLACE FOR YOUR EVERYDAY</p><h2 id="explore-title">이 동네에서, 나의 다음 집을.</h2><p>집마다 어떤 조건이 맞는지 살펴보고, 마음에 드는 집의 거래가격을 확인해요.</p></div><button type="button" class="data-date" data-open="sources"><span class="status-dot"></span><span id="checked-date">자료 확인 2026.10.28</span><span data-icon="info"></span></button></div>
+      <div class="catalog-coverage" id="catalog-coverage" aria-label="단지 자료 수록 범위"></div>
+      <div class="results-profile"><div><p class="eyebrow">MY LIVING WISHES</p><h3 id="selected-needs-title">집과 동네부터 둘러보세요</h3><p id="match-summary">생활 조건을 고르면 맞는 이유와 함께 보여드려요.</p></div><a href="#needs" id="edit-needs">생활 조건 고르기<span data-icon="arrow-up-right"></span></a></div>
+      <details class="refine-panel" id="refine-panel"><summary>동네·면적·금액으로 더 좁혀보기 <span id="refine-count"></span></summary><div class="explore-controls">
+        <div class="filter-row">
+          <div class="query-field"><span data-icon="search"></span><label for="query" class="sr-only">동네 또는 아파트 검색</label><input id="query" type="search" placeholder="동네·아파트 검색" maxlength="80"></div>
+          <label class="select-field"><span>동네</span><select id="neighborhood" aria-label="동네 선택"><option value="all">전체 동네</option></select></label>
+          <label class="select-field"><span>거래사례 금액</span><select id="price-filter" aria-label="거래사례 금액 선택"><option value="all">전체 금액대</option><option value="0-20000">2억 원 이하</option><option value="20000-30000">2억 초과 ~ 3억 원</option><option value="30000-40000">3억 초과 ~ 4억 원</option><option value="40000-50000">4억 초과 ~ 5억 원</option><option value="50000-999999">5억 원 초과</option></select></label>
+          <label class="select-field"><span>수록 전용면적</span><select id="area-filter" aria-label="수록 전용면적 선택"><option value="all">전체 면적</option><option value="small">60㎡ 미만</option><option value="medium">60 ~ 85㎡</option><option value="large">85㎡ 초과</option></select></label>
+          <button id="reset-filters" class="reset-button" type="button" aria-label="검색 조건 초기화"><span data-icon="reset"></span><span>초기화</span></button>
+        </div>
+        <p class="refine-help">면적·금액 조건을 선택하면 해당 거래자료가 수록된 단지만 남습니다. 전체 목록에는 가격 자료가 없는 단지도 포함됩니다.</p>
+      </div></details>
+      <div class="results-topline"><p id="results-count" role="status" aria-live="polite">집과 동네 자료를 불러오는 중입니다.</p><div class="results-options"><label class="all-needs-toggle"><input id="only-all-needs" type="checkbox" disabled>선택 조건 모두 맞는 집만</label><button type="button" id="saved-only" class="saved-filter" aria-pressed="false"><span data-icon="heart"></span>관심 단지만</button><label class="sr-only" for="sort-order">정렬 방식</label><select id="sort-order"><option value="match">선택 조건에 맞는 순</option><option value="name">단지 이름순</option><option value="date">계약일 최신순</option><option value="price-asc">거래금액 낮은순</option><option value="price-desc">거래금액 높은순</option></select><div class="mobile-view-switch" role="group" aria-label="결과 보기 방식"><button type="button" class="active" data-view="list" aria-pressed="true">목록</button><button type="button" data-view="map" aria-pressed="false">지도</button></div></div></div>
+      <p class="match-empty-note" id="match-empty-note" hidden></p>
+      <div class="explorer-layout" id="explorer-layout">
+        <div class="results-column"><div id="apartment-list" class="apartment-list" aria-label="생활 조건으로 살펴보는 아파트와 공동주택"></div><div id="empty-state" class="empty-state" hidden><span data-icon="search"></span><h3>지금 조건으로는 찾은 집이 없어요</h3><p>현재 선택한 생활 조건과 추가 검색을 함께 적용한 결과입니다.<br>전체 충족·관심 단지 옵션이나 추가 검색을 바꿔보세요.</p><div class="empty-actions"><a class="button primary" href="#needs">생활 조건 바꾸기</a><button type="button" class="button secondary" id="empty-reset">추가 검색 초기화</button></div></div><div class="data-note"><span data-icon="info"></span><p>표시 금액은 <strong>개별 매매 거래 사례</strong>입니다. 현재 호가나 단지 전체 시세를 뜻하지 않으며, 면적·층수·계약일에 따라 달라집니다. <button type="button" data-open="sources">자료 기준 보기</button></p></div></div>
+        <div class="map-column"><div class="map-shell"><div class="map-toolbar"><span><span class="status-dot"></span>집이 놓인 동네를 살펴보세요</span><button type="button" id="fit-map" aria-label="현재 페이지의 확인된 단지 위치 모아보기"><span data-icon="expand"></span>단지 모아보기</button></div><p class="map-catalog-status" id="map-list-status" role="status"></p><div id="map" class="map" aria-label="서구 아파트와 주변 명소·학교 생활권 위치도"></div><div id="map-fallback" class="map-fallback" hidden><span data-icon="map"></span><h3>위치도를 불러오지 못했어요</h3><p>단지 상세에서 주소와 주변 장소를 확인하고<br>외부 지도로 위치를 찾아볼 수 있습니다.</p><button class="button secondary" id="retry-map" type="button">다시 불러오기</button></div><div class="map-legend"><span><i class="legend-house"></i>목록 번호 · 단지 위치</span><span><i class="legend-place"></i>동네 명소</span><label><input id="show-places" type="checkbox" checked>명소 표시</label><label><input id="show-schools" type="checkbox">학교 표시</label></div></div><p class="map-caption" id="map-caption">지도는 현재 페이지에서 위치가 확인된 단지만 표시하며, 번호는 집 목록과 연결됩니다. 주요 도로·공원을 간략히 표시한 위치도이며 길찾기는 단지 상세의 외부 지도를 이용하세요.</p></div>
+      </div>
+      <nav class="catalog-pagination" id="catalog-pagination" aria-label="단지 목록 페이지" hidden><button type="button" class="button secondary" id="catalog-prev">이전</button><span id="catalog-page-label" role="status"></span><button type="button" class="button secondary" id="catalog-next">다음</button></nav>
+    </section>
+
+    <section class="education-section container" id="education" aria-labelledby="education-title">
+      <div class="section-heading"><div><p class="eyebrow">SCHOOLS & EVERYDAY LIFE</p><h2 id="education-title">집 가까이, 아이의 학교까지.</h2><p>주변 학교와 통학구역, 진학할 때 확인할 배정 기준을 함께 살펴보세요.</p></div><button type="button" class="data-date" data-open="school-sources"><span class="status-dot"></span><span id="school-data-count">공식 학교 자료</span><span data-icon="info"></span></button></div>
+      <div class="education-workspace">
+        <div class="education-toolbar"><label class="education-select" for="school-apartment"><span>살펴볼 단지</span><select id="school-apartment" disabled><option>학교 자료를 불러오는 중입니다</option></select></label><span class="education-source-date" id="education-data-date">학교 위치·통학구역 기준일을 따로 안내해요.</span></div>
+        <div id="education-apartment"></div>
+        <div class="school-level-tabs" role="group" aria-label="학교급 선택"><button type="button" class="active" data-school-level="elementary" aria-pressed="true">초등학교</button><button type="button" data-school-level="middle" aria-pressed="false">중학교</button><button type="button" data-school-level="high" aria-pressed="false">고등학교</button></div>
+        <div id="education-panel" aria-live="polite"><p class="education-footnote">학교 자료를 불러오는 중입니다.</p></div>
+      </div>
+      <div class="education-guide-grid">
+        <article class="education-guide-card"><span class="guide-number">01 · 초등학교</span><h3>정확한 주소로 통학구역 확인</h3><p>같은 동네라도 통학구역이 다를 수 있어요. 입학·전입할 학년도와 아파트 동까지 확인하세요.</p><a href="https://schoolzone.emac.kr/gis/gis.do" target="_blank" rel="noopener noreferrer">공식 학구도에서 확인<span data-icon="arrow-up-right"></span></a></article>
+        <article class="education-guide-card"><span class="guide-number">02 · 중학교</span><h3>출신 초등학교별 배정표 확인</h3><p>학교군과 출신 초등학교별 배정 가능 중학교를 함께 확인하세요. 신입학과 전입학의 절차도 달라요.</p><a href="https://seobu.jge.go.kr/board.php?id=230&amp;sid=19" target="_blank" rel="noopener noreferrer">교육지원청 배정 안내<span data-icon="arrow-up-right"></span></a></article>
+        <article class="education-guide-card"><span class="guide-number">03 · 고등학교</span><h3>출신 중학교와 전형부터 확인</h3><p>2027학년도 구 광주 평준화 일반고는 출신 중학교를 기준으로 배정 가능 학교를 정하고 추첨해요. 학교 유형별 요강도 확인하세요.</p><a href="https://hischool.go.kr/entrance/sido/view.do?nttId=21266" target="_blank" rel="noopener noreferrer">2027학년도 공식 요강<span data-icon="arrow-up-right"></span></a></article>
+      </div>
+      <p class="education-footnote">주변 학교와 직선거리는 실제 배정 학교나 통학 경로를 뜻하지 않습니다. 지도 기준 참고 통학구역·학교군은 단지 대표 위치를 대조한 결과이며, 입학·전입 대상 학교는 해당 학년도 고시·배정계획과 교육지원청 안내로 확인하세요.</p>
+      <details class="school-directory"><summary>서구 학교 이름으로 찾아보기 <span id="school-directory-total"></span></summary><div class="school-directory-controls"><label class="sr-only" for="school-query">학교 이름 또는 주소 검색</label><input id="school-query" type="search" placeholder="학교 이름 또는 동네를 검색하세요" maxlength="80"><label class="sr-only" for="school-level-filter">학교급 검색 조건</label><select id="school-level-filter"><option value="all">모든 학교급</option><option value="elementary">초등학교</option><option value="middle">중학교</option><option value="high">고등학교</option></select></div><p id="school-directory-count" class="education-footnote" role="status"></p><div class="school-directory-grid" id="school-directory-grid"></div></details>
+    </section>
+
+    <section class="discover-section" id="discover" aria-labelledby="discover-title"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow">AROUND THE NEIGHBORHOOD</p><h2 id="discover-title">매일이 조금 더 좋아지는 동네.</h2><p>멀리 떠나지 않아도 좋은 하루. 서구의 익숙하고 특별한 장소들.</p></div><div class="place-controls" role="group" aria-label="명소 분류"><button type="button" data-place-category="all" class="active" aria-pressed="true">전체</button><button type="button" data-place-category="nature" aria-pressed="false">자연·산책</button><button type="button" data-place-category="culture" aria-pressed="false">문화</button><button type="button" data-place-category="market" aria-pressed="false">시장</button></div></div>
+      <div class="places-grid" id="places-grid"></div>
+    </div></section>
+
+    <section class="day-section container" id="day-in-seogu" aria-labelledby="day-title"><div class="day-intro"><p class="eyebrow">A DAY IN SEOGU</p><h2 id="day-title">이 동네에 산다면,<br>나의 하루는?</h2><p>산책하고, 구경하고, 쉬어가는 일상.<br>마음에 드는 장면에서 동네를 만나보세요.</p><span class="day-caption">장소를 눌러 나만의 하루를 그려보세요.</span></div><div class="day-stories" id="day-stories"></div></section>
+
+    <section class="closing-section container"><div><p class="eyebrow">YOUR NEXT CHAPTER</p><h2>내일의 일상, 서구에서 시작해볼까요?</h2><p>원하는 일상을 고르고, 그에 어울리는 집과 동네를 천천히 살펴보세요.</p></div><a class="button primary" href="#needs">내 생활에 맞는 집 찾기<span data-icon="arrow-up-right"></span></a></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-main"><a href="#" class="brand footer-brand">서구<span class="brand-stay">stay</span><span class="brand-dot">.</span></a><p>전남광주통합특별시 서구<br><span>집을 넘어, 머물고 싶은 일상을 발견하는 곳.</span></p><div class="footer-links"><button type="button" data-open="about">서구stay 소개</button><button type="button" data-open="sources">정보·사진 출처</button><button type="button" data-open="privacy">관심 단지 저장 안내</button><a href="https://rt.molit.go.kr/" target="_blank" rel="noopener noreferrer">국토교통부 실거래가<span data-icon="arrow-up-right"></span></a></div></div><div class="footer-bottom"><span>© 2026 서구stay · 주거·생활정보 시범 서비스</span><span>공동주택 목록과 거래자료의 수록 범위·기준일을 구분해 안내합니다.</span></div></div></footer>
+  <div class="compare-tray" id="compare-tray" hidden><div><span data-icon="compare"></span><strong>단지 비교</strong><span id="compare-summary">0개 선택</span></div><div class="tray-actions"><button type="button" id="clear-compare" class="text-button">비우기</button><button type="button" class="button primary" id="open-compare">비교하기<span data-icon="arrow-right"></span></button></div></div>
+  <dialog id="detail-dialog" class="detail-dialog"><button type="button" class="dialog-close" aria-label="상세 창 닫기" data-close-dialog><span data-icon="close"></span></button><div id="detail-content"></div></dialog>
+  <dialog id="info-dialog" class="info-dialog"><button type="button" class="dialog-close" aria-label="안내 창 닫기" data-close-dialog><span data-icon="close"></span></button><div id="info-content"></div></dialog>
+  <dialog id="compare-dialog" class="compare-dialog"><button type="button" class="dialog-close" aria-label="비교 창 닫기" data-close-dialog><span data-icon="close"></span></button><div id="compare-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><div class="noscript-note">아파트 검색과 지도는 자바스크립트를 사용합니다. 브라우저에서 자바스크립트를 켜주세요. 가격 원문은 <a href="https://rt.molit.go.kr/">국토교통부 실거래가 공개시스템</a>에서 확인할 수 있습니다.</div></noscript>
+</body>
+</html>

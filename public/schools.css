@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+/* School information shares the site's quiet paper-and-forest palette. */
+.education-section { padding-top: 64px; padding-bottom: 70px; border-top: 1px solid var(--line); }
+.education-section .section-heading > div > p:last-child { max-width: 630px; font-size: 13px; line-height: 1.8; color: #677668; }
+.education-section .data-date { font-size: 12px; white-space: normal; text-align: left; line-height: 1.6; }
+.education-workspace { min-width: 0; overflow: hidden; border: 1px solid #dce4d5; border-radius: 14px; background: var(--white); }
+.education-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px 24px; padding: 18px 24px; border-bottom: 1px solid var(--line); background: #f3f6ed; }
+.education-select { display: flex; align-items: center; gap: 14px; min-width: 0; flex: 1 1 360px; max-width: 530px; }
+.education-select > span { flex: 0 0 auto; font-size: 12px; font-weight: 650; color: #56704e; }
+.education-select select { min-width: 0; width: 100%; min-height: 44px; padding: 10px 35px 10px 13px; border: 1px solid #cfdac5; border-radius: 7px; color: var(--forest-deep); background-color: var(--white); font-size: 14px; line-height: 1.45; }
+.education-select select:disabled { color: #788571; cursor: wait; }
+.education-source-date { flex: 0 1 330px; color: #6c7a64; font-size: 12px; line-height: 1.7; overflow-wrap: anywhere; }
+.education-home { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 25px 24px 23px; }
+.education-home > div { min-width: 0; }
+.education-home > div > span { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: #6b805e; }
+.education-home h3 { margin-top: 5px; font-size: 20px; font-weight: 750; letter-spacing: -.6px; line-height: 1.5; overflow-wrap: anywhere; }
+.education-home p { margin-top: 7px; font-size: 12px; line-height: 1.75; color: #6a7765; overflow-wrap: anywhere; }
+.education-home > button { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; padding: 10px 14px; border: 1px solid #d4dfca; border-radius: 7px; color: var(--forest); background: #fbfcf7; font-size: 12px; font-weight: 600; line-height: 1.5; }
+.education-home > button:hover { border-color: #9fb48e; background: var(--softest); }
+.education-home > button svg { width: 16px; height: 16px; }
+
+/* Nearby schools and an assignment reference remain visually distinct. */
+.school-level-tabs { display: flex; align-items: stretch; gap: 6px; padding-inline: 24px; border-bottom: 1px solid var(--line); }
+.school-level-tabs button { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-width: 106px; min-height: 49px; padding: 12px 17px; border-radius: 6px 6px 0 0; color: #75816e; font-size: 14px; font-weight: 550; line-height: 1.5; }
+.school-level-tabs button:hover { background: #f6f8f1; color: var(--forest); }
+.school-level-tabs button.active, .school-level-tabs button[aria-pressed="true"] { color: var(--forest); background: #f1f6e9; font-weight: 750; }
+.school-level-tabs button.active::after, .school-level-tabs button[aria-pressed="true"]::after { content: ""; position: absolute; bottom: -1px; inset-inline: 0; height: 3px; border-radius: 3px 3px 0 0; background: var(--forest); }
+.school-level-tabs svg { width: 17px; height: 17px; }
+#education-panel { padding: 24px; min-width: 0; }
+#education-panel > .education-footnote:first-child { margin-top: 0; }
+.school-overview { display: grid; grid-template-columns: minmax(0, 36fr) minmax(0, 64fr); align-items: stretch; gap: 24px; }
+.school-overview > * { min-width: 0; }
+.school-assignment { display: flex; flex-direction: column; align-items: flex-start; padding: 22px; border: 1px solid #e5e5d5; border-radius: 10px; background: #f6f5eb; }
+.assignment-label { display: inline-flex; align-items: center; gap: 7px; color: #7a724d; font-size: 12px; font-weight: 600; line-height: 1.6; }
+.assignment-label svg { width: 16px; height: 16px; }
+.school-assignment h4 { margin-top: 13px; font-size: 16px; font-weight: 750; line-height: 1.65; letter-spacing: -.3px; color: var(--forest-deep); overflow-wrap: anywhere; }
+.school-assignment p { margin-top: 10px; font-size: 13px; line-height: 1.9; color: #68725d; overflow-wrap: anywhere; }
+.school-assignment p + p { margin-top: 8px; }
+.school-assignment p strong { color: #425d3a; font-weight: 650; }
+.school-links { display: flex; flex-wrap: wrap; align-items: center; gap: 9px 17px; padding-top: 17px; margin-top: auto; }
+.school-links a, .school-links button { display: inline-flex; align-items: center; gap: 5px; min-height: 32px; padding: 3px 0; color: var(--forest); font-size: 12px; font-weight: 600; line-height: 1.6; text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.school-links a:hover, .school-links button:hover { color: #193d32; text-decoration-thickness: 2px; }
+.school-links svg { width: 14px; height: 14px; }
+.school-nearby-list { min-width: 0; }
+.school-nearby-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 5px 14px; padding: 2px 1px 13px; color: #687b5e; font-size: 12px; line-height: 1.7; }
+.school-nearby-heading h4, .school-nearby-heading strong { color: #35582e; font-size: 15px; font-weight: 650; }
+.school-nearby-heading > span, .school-nearby-heading small { font-size: 12px; color: #738169; }
+.school-row { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; align-items: center; gap: 13px; width: 100%; min-width: 0; min-height: 80px; padding: 14px 16px; border: 1px solid #e1e8d8; border-radius: 8px; background: #fdfefa; text-align: left; transition: background .16s, border-color .16s; }
+.school-row + .school-row { margin-top: 9px; }
+.school-row:hover { border-color: #a7bc94; background: #f3f8eb; }
+.school-level-icon { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; flex: 0 0 auto; border-radius: 10px; color: #597b48; background: #eaf1df; }
+.school-level-icon svg { width: 20px; height: 20px; }
+.school-row-copy { display: block; min-width: 0; }
+.school-row-copy strong { display: block; color: #355d2b; font-size: 14px; font-weight: 650; line-height: 1.6; word-break: keep-all; overflow-wrap: anywhere; }
+.school-row-copy small { display: block; margin-top: 3px; color: #6d7d62; font-size: 12px; line-height: 1.65; word-break: keep-all; overflow-wrap: anywhere; }
+.school-distance { display: block; color: #607b4e; font-size: 12px; font-weight: 550; line-height: 1.65; text-align: right; white-space: nowrap; }
+.school-distance small { display: block; font-size: 12px; font-weight: 450; color: #7b896d; }
+
+/* Three short guides keep the next step close to its school level. */
+.education-guide-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+.education-guide-card { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; padding: 23px; border: 1px solid #e0e6d7; border-radius: 10px; background: #f4f6ee; }
+.guide-number { display: inline-block; color: #6d845a; font-size: 12px; font-weight: 650; line-height: 1.6; letter-spacing: .4px; }
+.education-guide-card h3 { margin-top: 11px; color: #3b5e32; font-size: 15px; line-height: 1.65; font-weight: 700; letter-spacing: -.2px; overflow-wrap: anywhere; }
+.education-guide-card p { margin-top: 9px; margin-bottom: 18px; font-size: 13px; line-height: 1.9; color: #6e7e62; overflow-wrap: anywhere; }
+.education-guide-card > a { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; margin-top: auto; color: var(--forest); font-size: 12px; font-weight: 650; line-height: 1.7; text-decoration: underline; text-underline-offset: 4px; }
+.education-guide-card > a:hover { color: var(--forest-deep); text-decoration-thickness: 2px; }
+.education-guide-card > a svg { width: 14px; height: 14px; }
+.education-footnote { margin-top: 18px; color: #6d7b65; font-size: 12px; line-height: 1.9; overflow-wrap: anywhere; }
+.education-footnote a, .education-footnote button { color: var(--forest); font: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* An apartment card has one compact, readable school entry point. */
+.apt-school-line { min-width: 0; margin-top: 15px; margin-bottom: 0; }
+.apt-school-line { display: flex; align-items: center; gap: 10px; width: 100%; min-width: 0; min-height: 68px; padding: 11px 12px; border: 1px solid #e1e9d7; border-radius: 7px; background: #f4f8ec; text-align: left; }
+.apt-school-line:hover { border-color: #afc39b; background: #edf4e1; }
+.apt-school-line > svg, .apt-school-line > [data-icon] { color: #6e8d59; flex: 0 0 auto; }
+.apt-school-line svg { width: 17px; height: 17px; }
+.apt-school-line > span { display: block; min-width: 0; }
+.apt-school-line small { display: block; color: #6f7f60; font-size: 12px; line-height: 1.6; }
+.apt-school-line strong { display: inline; margin-right: 6px; color: #3d642f; font-size: 13px; font-weight: 650; line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere; }
+.apt-school-line em { display: inline; color: #6f845b; font-size: 12px; font-weight: 450; font-style: normal; line-height: 1.7; }
+
+/* Dialogs use the same rows, without squeezing three distances onto one line. */
+.detail-school-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: 12px; margin-top: 17px; }
+.school-level-card { min-width: 0; padding: 15px 13px; border: 1px solid #dfe7d4; border-radius: 9px; background: #f8faf3; }
+.school-level-card > h4 { color: #45673a; font-size: 14px; font-weight: 700; line-height: 1.6; }
+.school-level-card > p { margin-top: 7px; color: #6f7f62; font-size: 12px; line-height: 1.8; overflow-wrap: anywhere; }
+.school-row.compact { grid-template-columns: 28px minmax(0, 1fr); gap: 3px 8px; min-height: 0; margin-top: 11px; padding: 12px 0 0; border: 0; border-top: 1px solid #e0e7d6; border-radius: 0; background: transparent; }
+.school-row.compact:hover { background: #edf4e4; }
+.school-row.compact .school-level-icon { width: 28px; height: 30px; border-radius: 6px; align-self: start; }
+.school-row.compact .school-level-icon svg { width: 15px; height: 15px; }
+.school-row.compact .school-row-copy strong { font-size: 13px; }
+.school-row.compact .school-row-copy small { font-size: 12px; }
+.school-row.compact .school-distance { grid-column: 2; text-align: left; font-size: 12px; white-space: normal; }
+.school-detail-badge { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 13px; padding: 5px 10px; border: 1px solid #d9e4cc; border-radius: 5px; color: #527343; background: #eef4e4; font-size: 12px; font-weight: 600; line-height: 1.5; }
+.school-detail-badge svg { width: 15px; height: 15px; }
+.school-facts { margin-top: 23px; padding: 19px 20px; border: 1px solid #dfe7d5; border-radius: 9px; background: var(--white); }
+.school-facts dl { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: 13px 18px; margin: 0; }
+.school-facts dl > div { display: contents; }
+.school-facts dt { color: #6a7b5d; font-size: 12px; font-weight: 550; line-height: 1.8; }
+.school-facts dd { margin: 0; min-width: 0; color: #45643a; font-size: 13px; line-height: 1.8; word-break: keep-all; overflow-wrap: anywhere; }
+.school-facts dd a { color: var(--forest); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Public school locations have a recognisable marker alongside homes and parks. */
+.school-marker-wrap { display: flex; align-items: center; justify-content: center; border: 0; background: transparent; }
+.school-marker { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border: 2px solid #fff; border-radius: 8px; background: #54795c; color: #fff; box-shadow: 0 2px 7px #193d3233; }
+.school-marker svg { width: 15px; height: 15px; }
+.school-marker.middle { background: #6c7960; }
+.school-marker.high { background: #7d6b49; }
+.school-marker-wrap:hover .school-marker { box-shadow: 0 0 0 3px #c7d9b9, 0 3px 8px #193d322b; }
+.legend-school { display: inline-block; width: 9px; height: 9px; border-radius: 2px; background: #54795c; }
+
+/* The directory is optional, searchable, and stays within a small screen. */
+.school-directory { margin-top: 25px; padding: 21px 23px; border: 1px solid #dce5d1; border-radius: 11px; background: #fff; }
+.school-directory > summary, .school-directory details > summary { min-height: 26px; color: #426036; font-size: 14px; font-weight: 650; line-height: 1.8; cursor: pointer; overflow-wrap: anywhere; }
+.school-directory summary::marker { color: #80946d; }
+.school-directory summary span { margin-left: 6px; color: #7b8d6b; font-size: 12px; font-weight: 500; }
+.school-directory-controls { display: grid; grid-template-columns: minmax(0, 1fr) minmax(150px, 210px); gap: 12px; margin-top: 21px; }
+.school-directory-controls input, .school-directory-controls select { width: 100%; min-width: 0; min-height: 44px; padding: 10px 12px; border: 1px solid #d4dfc9; border-radius: 7px; background: #fbfcf8; color: var(--forest-deep); font-size: 14px; line-height: 1.5; }
+.school-directory-controls select { padding-right: 27px; }
+.school-directory .education-footnote { margin-top: 12px; }
+.school-directory-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-content: start; gap: 11px; max-height: 440px; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #c3d1b5 #f7faf1; margin-top: 16px; padding: 4px 4px 8px; }
+.school-directory-item { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; min-width: 0; min-height: 106px; width: 100%; padding: 15px; border: 1px solid #e0e7d6; border-radius: 8px; background: #fcfdf9; text-align: left; }
+.school-directory-item:hover { border-color: #a7bd92; background: #f2f7e9; }
+.school-directory-item > span { color: #6f855f; font-size: 12px; line-height: 1.5; }
+.school-directory-item > strong { color: #365b2b; font-size: 14px; font-weight: 650; line-height: 1.65; word-break: keep-all; overflow-wrap: anywhere; }
+.school-directory-item > small { color: #718164; font-size: 12px; line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere; }
+.school-directory-grid > .education-footnote { grid-column: 1 / -1; margin: 0; padding: 18px 4px; }
+
+@media (max-width: 960px) {
+  .education-section { padding-top: 55px; padding-bottom: 60px; }
+  .education-toolbar { gap: 12px 18px; }
+  .education-source-date { flex-basis: 100%; }
+  .school-overview { grid-template-columns: minmax(0, 36fr) minmax(0, 64fr); gap: 17px; }
+  .school-assignment { padding: 18px; }
+  .school-row { grid-template-columns: 35px minmax(0, 1fr) auto; gap: 10px; padding: 13px 12px; }
+  .school-level-icon { width: 35px; height: 37px; }
+  .education-guide-grid { gap: 12px; }
+  .education-guide-card { padding: 19px; }
+  .school-directory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .school-overview { grid-template-columns: minmax(0, 1fr); gap: 23px; }
+  .school-assignment { padding: 21px; }
+  .school-links { margin-top: 4px; padding-top: 11px; }
+  .education-guide-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .education-guide-card { padding: 20px 22px; }
+  .education-guide-card p { margin-bottom: 12px; }
+}
+@media (max-width: 640px) {
+  .education-section { padding-top: 42px; padding-bottom: 48px; }
+  .education-section .section-heading > div > p:last-child { font-size: 12px; line-height: 1.85; }
+  .education-section .data-date { font-size: 12px; }
+  .education-workspace { border-radius: 10px; }
+  .education-toolbar { padding: 17px; gap: 12px; }
+  .education-select { display: grid; grid-template-columns: minmax(0, 1fr); flex-basis: 100%; max-width: none; gap: 8px; }
+  .education-select select { min-height: 46px; font-size: 16px; }
+  .education-source-date { font-size: 12px; line-height: 1.75; }
+  .education-home { align-items: flex-start; flex-direction: column; gap: 13px; padding: 20px 18px; }
+  .education-home h3 { font-size: 18px; }
+  .education-home > button { min-height: 42px; }
+  .school-level-tabs { gap: 3px; padding-inline: 13px; }
+  .school-level-tabs button { flex: 1 1 0; min-width: 0; min-height: 47px; padding: 12px 7px; font-size: 13px; }
+  #education-panel { padding: 19px 17px; }
+  .school-assignment { padding: 18px; }
+  .school-assignment p { font-size: 13px; }
+  .school-nearby-heading { padding-bottom: 11px; }
+  .school-nearby-heading h4, .school-nearby-heading strong { font-size: 14px; }
+  .school-row { grid-template-columns: 32px minmax(0, 1fr) auto; gap: 9px; min-height: 78px; padding: 13px 10px; }
+  .school-level-icon { width: 32px; height: 35px; border-radius: 8px; }
+  .school-level-icon svg { width: 18px; height: 18px; }
+  .school-row-copy strong { font-size: 13px; }
+  .school-distance { font-size: 12px; }
+  .education-guide-grid { margin-top: 19px; }
+  .education-guide-card { padding: 19px 20px; }
+  .education-footnote { font-size: 12px; line-height: 1.9; }
+  .detail-school-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .school-level-card { padding: 17px; }
+  .school-row.compact { grid-template-columns: 29px minmax(0, 1fr) auto; gap: 9px; min-height: 54px; padding-top: 12px; }
+  .school-row.compact .school-distance { grid-column: auto; text-align: right; white-space: nowrap; }
+  .school-row.compact .school-level-icon { align-self: center; }
+  .school-facts { padding: 17px; }
+  .school-facts dl { grid-template-columns: 76px minmax(0, 1fr); gap: 12px; }
+  .school-directory { padding: 19px 17px; }
+  .school-directory-controls { grid-template-columns: minmax(0, 1fr); gap: 9px; margin-top: 17px; }
+  .school-directory-controls input, .school-directory-controls select { min-height: 46px; font-size: 16px; }
+  .school-directory-grid { grid-template-columns: minmax(0, 1fr); max-height: 460px; gap: 9px; margin-top: 12px; }
+  .school-directory-item { min-height: 99px; padding: 14px; }
+}
+@media (max-width: 380px) {
+  .school-row { grid-template-columns: 29px minmax(0, 1fr); gap: 3px 9px; }
+  .school-level-icon { width: 29px; height: 32px; grid-row: 1 / span 2; align-self: start; }
+  .school-distance { grid-column: 2; text-align: left; white-space: normal; }
+  .school-row.compact { grid-template-columns: 28px minmax(0, 1fr); }
+  .school-row.compact .school-distance { grid-column: 2; text-align: left; white-space: normal; }
+  .school-facts dl { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .school-facts dd + dt { margin-top: 9px; }
+}
+@media print {
+  .education-workspace, .school-assignment, .education-guide-card, .school-row { box-shadow: none; break-inside: avoid; }
+  .education-section { padding-block: 24px; }
+  .education-toolbar, .school-directory-controls { display: none; }
+  .school-directory-grid { max-height: none; overflow: visible; }
+}
+
+/* Keep homes and schools visible in the mobile masthead. */
+@media (max-width: 720px) {
+  .main-nav a[href="#day-in-seogu"], .main-nav a[href="#discover"] { display: none; }
+  .main-nav a[href="#education"], .main-nav a[href="#explore"] { display: flex; }
+}
+
+/* Fit the integrated school labels and sources to their actual controls. */
+.school-distance .icon { width: 13px; height: 13px; margin-left: 5px; }
+.school-directory-item > strong .icon { width: 13px; height: 13px; margin-left: 5px; }
+.school-card-assignment { display: block; color: var(--forest); font-size: 14px; line-height: 1.7; margin-top: 6px; overflow-wrap: anywhere; }
+.school-level-card .school-card-meta, .school-assignment .assignment-meta { font-size: 11px; line-height: 1.8; color: #7b7b65; }
+.school-level-card .school-card-nearby { margin-top: 16px; font-size: 11px; }
+.school-level-icon { font-size: 13px; font-weight: 700; }
+.school-level-icon.middle { background: #e9eee8; color: #5b6d5e; }
+.school-level-icon.high { background: #f1ecdF; color: #82734f; }
+.school-marker { width: 25px; height: 25px; font-family: inherit; font-size: 11px; font-weight: 700; }
+.map-legend { flex-wrap: wrap; row-gap: 7px; }
+.map-legend > label { margin-left: 0; }
+.apt-school-line > span { flex: 1; }
+.apt-school-line small { font-size: 10px; }
+.apt-school-line > .icon:last-child { width: 12px; height: 12px; }

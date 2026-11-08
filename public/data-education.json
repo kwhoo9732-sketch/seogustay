@@ -1,0 +1,913 @@
+{
+  "checkedAt": "2026-10-28",
+  "zoneDataDate": "2026-09-20",
+  "zonePublishedAt": "2026-10-02",
+  "zoneSourceUrl": "https://schoolzone.emac.kr/publicData/publicDataList.do",
+  "zoneStatus": "map_reference_not_assignment_confirmation",
+  "zoneSources": {
+    "elementaryZones": {
+      "publisher": "한국교육시설안전원 학구도안내서비스",
+      "documentTitle": "한국교육시설안전원 초등학교 통학구역 및 공동통학구역(2026.09.20.)",
+      "sourceUrl": "https://schoolzone.emac.kr/publicData/publicDataList.do",
+      "documentUrl": "https://schoolzone.emac.kr/publicData/publicDataView.do?nttId=2966",
+      "downloadUrl": "https://schoolzone.emac.kr/publicData/publicDataFileDownload.do?nttId=2966&atchFileId=FILE_000000100002996&fileSn=0",
+      "publishedAt": "2026-10-02",
+      "dataDate": "2026-09-20",
+      "academicYear": null,
+      "academicYearNote": "해당 학년도 배정 확정 고시가 아니라 2026-09-20 기준 통학구역 공간자료이다.",
+      "sourceType": "official_open_spatial_data",
+      "fileName": "한국교육시설안전원_초등학교통학구역_파일데이터.zip",
+      "coordinateSystem": "EPSG:5186",
+      "encoding": "EUC-KR",
+      "exactEvidence": "초등학교 통학구역 및 공동통학구역(2026.09.20.)의 공간정보 파일데이터(SHP)입니다.",
+      "documentAccessNote": "공식 목록의 첨부 링크와 공개 POST 상세화면을 직접 열람하고 원본 ZIP을 내려받았다. 상세 GET 링크는 서비스 상태에 따라 목록으로 이동할 수 있다.",
+      "sha256": "66b7650d5eef3b900061083b3d8f5c8f6dcb8eb00b891e6b03132f08fdca2911"
+    },
+    "middleZones": {
+      "publisher": "한국교육시설안전원 학구도안내서비스",
+      "documentTitle": "한국교육시설안전원 중학교 학구 및 학군(2026.09.20.)",
+      "sourceUrl": "https://schoolzone.emac.kr/publicData/publicDataList.do",
+      "documentUrl": "https://schoolzone.emac.kr/publicData/publicDataView.do?nttId=2965",
+      "downloadUrl": "https://schoolzone.emac.kr/publicData/publicDataFileDownload.do?nttId=2965&atchFileId=FILE_000000100002995&fileSn=0",
+      "publishedAt": "2026-10-02",
+      "dataDate": "2026-09-20",
+      "academicYear": null,
+      "academicYearNote": "2027학년도 중학교 배정 시행계획 또는 지원 가능 학교 명단이 아니라 2026-09-20 기준 학교군 공간자료이다.",
+      "sourceType": "official_open_spatial_data",
+      "fileName": "한국교육시설안전원_중학교학교군_파일데이터.zip",
+      "coordinateSystem": "EPSG:5186",
+      "encoding": "EUC-KR",
+      "sha256": "0af6764dd939a8e6d60244216f7fbd8e80e6b1d7781b5f80c4b852d24bdd416b"
+    },
+    "schoolZoneLinks": {
+      "publisher": "한국교육시설안전원 학구도안내서비스",
+      "documentTitle": "한국교육시설안전원 학교-학구도 연계정보(2026.09.20.)",
+      "sourceUrl": "https://schoolzone.emac.kr/publicData/publicDataList.do",
+      "documentUrl": "https://schoolzone.emac.kr/publicData/publicDataView.do?nttId=2961",
+      "downloadUrl": "https://schoolzone.emac.kr/publicData/publicDataFileDownload.do?nttId=2961&atchFileId=FILE_000000100002991&fileSn=0",
+      "publishedAt": "2026-10-02",
+      "dataDate": "2026-09-20",
+      "sourceType": "official_open_csv",
+      "fileName": "한국교육시설안전원_학교학구도연계정보_20260920.csv",
+      "sha256": "a102ef9cb6c31dfc0b26a1c8972ad5e4eb9ab680d88ec42fdb1a284742192c85"
+    }
+  },
+  "method": {
+    "inputCoordinateSystem": "EPSG:4326 (경도, 위도)",
+    "polygonCoordinateSystem": "EPSG:5186 (미터)",
+    "transform": "pyproj.Transformer.from_crs(EPSG:4326, EPSG:5186, always_xy=True)",
+    "predicate": "shapely polygon.covers(point)",
+    "join": "초등 통학구역 HAKGUDO_ID = 학교-학구도 연계 CSV 학구ID; 학교ID로 공식 학교위치 CSV와 이름 재확인",
+    "coverage": "전국 모든 초등 통학구역·공동통학구역 도형과 중학교 학교군 도형을 검사해 각 단지별 포함 도형을 수집함."
+  },
+  "academicYearStatus": {
+    "2026": "공식 2026-09-20 지도자료 대조 완료. 주소·통반별 배정 고시 직접 대조는 미확인.",
+    "2027": "이 자료에서는 초등 통학구역 확정·예고 여부 및 주소별 배정을 확인하지 못함."
+  },
+  "displayNotes": [
+    "표시명은 지도 기준 참고 통학구역·학교군이다. 배정학교 확정, 통학 보장, 특정 중학교 지원 가능으로 표시하지 않는다.",
+    "공식 지도 도형과 2차 출처 단지 대표좌표를 대조한 결과로, 주소·통반·동별 예외 및 경계 변경을 반영한 최종 배정 확인은 교육지원청에 필요하다.",
+    "공간자료 기준일은 2026-09-20이다. 게시일 2026-10-02 및 학교 위치 CSV 기준일 2026-10-01과 구별한다.",
+    "2027학년도 배정 여부를 이 지도 결과로 추정하지 않는다."
+  ],
+  "apartmentZones": [
+    {
+      "apartmentId": "pungam-woomi",
+      "elementaryNames": [
+        "금당초등학교"
+      ],
+      "elementarySchoolIds": [
+        "B000003273"
+      ],
+      "elementaryZoneId": "Z000101403",
+      "middleGroupName": "제2학교군",
+      "middleZoneId": "Z000200120",
+      "assignmentConfirmed": false,
+      "representativeCoordinate": {
+        "lat": 35.126559,
+        "lng": 126.881243,
+        "sourceUrl": "https://korea-rich.com/apt/29140-132/",
+        "sourceType": "secondary_apartment_coordinate",
+        "crs": "EPSG:4326",
+        "note": "기존 아파트 자료의 단지 대표좌표이다. 세대·동별 주소 또는 단지 전체 경계와의 대조가 아니다."
+      },
+      "evidence": {
+        "elementary": {
+          "polygonRecord": {
+            "OBJECTID": 3058,
+            "HAKGUDO_ID": "Z000101403",
+            "HAKGUDO_NM": "금당초통학구역",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2018-02-07",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 3449
+          },
+          "schoolZoneLinkRecord": {
+            "학구ID": "Z000101403",
+            "학교ID": "B000003273",
+            "학교명": "금당초등학교",
+            "학교급구분": "초등학교",
+            "시도교육청코드": "7140000",
+            "시도교육청명": "전남광주통합특별시교육청",
+            "교육지원청코드": "7402000",
+            "교육지원청명": "전남광주통합특별시서부교육지원청",
+            "데이터기준일자": "2026-09-20"
+          },
+          "pointProjected": [
+            189175.60679856266,
+            281142.0120293997
+          ],
+          "distanceToZoneBoundaryMeters": 105.9,
+          "spatialPredicate": "polygon.covers(point)"
+        },
+        "middle": {
+          "polygonRecord": {
+            "OBJECTID": 1190,
+            "HAKGUDO_ID": "Z000200120",
+            "HAKGUDO_NM": "2학교군",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "270",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2024-06-18",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 1321
+          },
+          "pointProjected": [
+            189175.60679856266,
+            281142.0120293997
+          ],
+          "distanceToZoneBoundaryMeters": 152.09,
+          "spatialPredicate": "polygon.covers(point)"
+        }
+      }
+    },
+    {
+      "apartmentId": "geumho-jongwon",
+      "elementaryNames": [
+        "만호초등학교"
+      ],
+      "elementarySchoolIds": [
+        "B000003257"
+      ],
+      "elementaryZoneId": "Z000101412",
+      "middleGroupName": "제3학교군",
+      "middleZoneId": "Z000200121",
+      "assignmentConfirmed": false,
+      "representativeCoordinate": {
+        "lat": 35.129898,
+        "lng": 126.852439,
+        "sourceUrl": "https://korea-rich.com/apt/29140-153/",
+        "sourceType": "secondary_apartment_coordinate",
+        "crs": "EPSG:4326",
+        "note": "기존 아파트 자료의 단지 대표좌표이다. 세대·동별 주소 또는 단지 전체 경계와의 대조가 아니다."
+      },
+      "evidence": {
+        "elementary": {
+          "polygonRecord": {
+            "OBJECTID": 3770,
+            "HAKGUDO_ID": "Z000101412",
+            "HAKGUDO_NM": "만호초통학구역",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2021-11-23",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 4217
+          },
+          "schoolZoneLinkRecord": {
+            "학구ID": "Z000101412",
+            "학교ID": "B000003257",
+            "학교명": "만호초등학교",
+            "학교급구분": "초등학교",
+            "시도교육청코드": "7140000",
+            "시도교육청명": "전남광주통합특별시교육청",
+            "교육지원청코드": "7402000",
+            "교육지원청명": "전남광주통합특별시서부교육지원청",
+            "데이터기준일자": "2026-09-20"
+          },
+          "pointProjected": [
+            186550.74392140543,
+            281515.96165791777
+          ],
+          "distanceToZoneBoundaryMeters": 47.64,
+          "spatialPredicate": "polygon.covers(point)"
+        },
+        "middle": {
+          "polygonRecord": {
+            "OBJECTID": 1191,
+            "HAKGUDO_ID": "Z000200121",
+            "HAKGUDO_NM": "3학교군",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2024-06-18",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 1322
+          },
+          "pointProjected": [
+            186550.74392140543,
+            281515.96165791777
+          ],
+          "distanceToZoneBoundaryMeters": 906.36,
+          "spatialPredicate": "polygon.covers(point)"
+        }
+      }
+    },
+    {
+      "apartmentId": "chipyeong-mayluz",
+      "elementaryNames": [
+        "운천초등학교"
+      ],
+      "elementarySchoolIds": [
+        "B000003272"
+      ],
+      "elementaryZoneId": "Z000101448",
+      "middleGroupName": "제3학교군",
+      "middleZoneId": "Z000200121",
+      "assignmentConfirmed": false,
+      "representativeCoordinate": {
+        "lat": 35.151008,
+        "lng": 126.850837,
+        "sourceUrl": "https://korea-rich.com/apt/29140-373/",
+        "sourceType": "secondary_apartment_coordinate",
+        "crs": "EPSG:4326",
+        "note": "기존 아파트 자료의 단지 대표좌표이다. 세대·동별 주소 또는 단지 전체 경계와의 대조가 아니다."
+      },
+      "evidence": {
+        "elementary": {
+          "polygonRecord": {
+            "OBJECTID": 2206,
+            "HAKGUDO_ID": "Z000101448",
+            "HAKGUDO_NM": "운천초통학구역",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2017-02-16",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 2629
+          },
+          "schoolZoneLinkRecord": {
+            "학구ID": "Z000101448",
+            "학교ID": "B000003272",
+            "학교명": "운천초등학교",
+            "학교급구분": "초등학교",
+            "시도교육청코드": "7140000",
+            "시도교육청명": "전남광주통합특별시교육청",
+            "교육지원청코드": "7402000",
+            "교육지원청명": "전남광주통합특별시서부교육지원청",
+            "데이터기준일자": "2026-09-20"
+          },
+          "pointProjected": [
+            186408.2410250746,
+            283858.1917911671
+          ],
+          "distanceToZoneBoundaryMeters": 306.35,
+          "spatialPredicate": "polygon.covers(point)"
+        },
+        "middle": {
+          "polygonRecord": {
+            "OBJECTID": 1191,
+            "HAKGUDO_ID": "Z000200121",
+            "HAKGUDO_NM": "3학교군",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2024-06-18",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 1322
+          },
+          "pointProjected": [
+            186408.2410250746,
+            283858.1917911671
+          ],
+          "distanceToZoneBoundaryMeters": 1737.75,
+          "spatialPredicate": "polygon.covers(point)"
+        }
+      }
+    },
+    {
+      "apartmentId": "hwajeong-centralpark",
+      "elementaryNames": [
+        "화정남초등학교"
+      ],
+      "elementarySchoolIds": [
+        "B000003277"
+      ],
+      "elementaryZoneId": "Z000101475",
+      "middleGroupName": "제3학교군",
+      "middleZoneId": "Z000200121",
+      "assignmentConfirmed": false,
+      "representativeCoordinate": {
+        "lat": 35.139886,
+        "lng": 126.874667,
+        "sourceUrl": "https://korea-rich.com/apt/29140-414/",
+        "sourceType": "secondary_apartment_coordinate",
+        "crs": "EPSG:4326",
+        "note": "기존 아파트 자료의 단지 대표좌표이다. 세대·동별 주소 또는 단지 전체 경계와의 대조가 아니다."
+      },
+      "evidence": {
+        "elementary": {
+          "polygonRecord": {
+            "OBJECTID": 3545,
+            "HAKGUDO_ID": "Z000101475",
+            "HAKGUDO_NM": "화정남초통학구역",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2016-08-12",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 3999
+          },
+          "schoolZoneLinkRecord": {
+            "학구ID": "Z000101475",
+            "학교ID": "B000003277",
+            "학교명": "화정남초등학교",
+            "학교급구분": "초등학교",
+            "시도교육청코드": "7140000",
+            "시도교육청명": "전남광주통합특별시교육청",
+            "교육지원청코드": "7402000",
+            "교육지원청명": "전남광주통합특별시서부교육지원청",
+            "데이터기준일자": "2026-09-20"
+          },
+          "pointProjected": [
+            188578.08235624305,
+            282621.2854289164
+          ],
+          "distanceToZoneBoundaryMeters": 129.05,
+          "spatialPredicate": "polygon.covers(point)"
+        },
+        "middle": {
+          "polygonRecord": {
+            "OBJECTID": 1191,
+            "HAKGUDO_ID": "Z000200121",
+            "HAKGUDO_NM": "3학교군",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2024-06-18",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 1322
+          },
+          "pointProjected": [
+            188578.08235624305,
+            282621.2854289164
+          ],
+          "distanceToZoneBoundaryMeters": 788.04,
+          "spatialPredicate": "polygon.covers(point)"
+        }
+      }
+    },
+    {
+      "apartmentId": "ssangchon-eliche",
+      "elementaryNames": [
+        "서광초등학교"
+      ],
+      "elementarySchoolIds": [
+        "B000003279"
+      ],
+      "elementaryZoneId": "Z000101426",
+      "middleGroupName": "제3학교군",
+      "middleZoneId": "Z000200121",
+      "assignmentConfirmed": false,
+      "representativeCoordinate": {
+        "lat": 35.15478,
+        "lng": 126.868455,
+        "sourceUrl": "https://korea-rich.com/apt/29140-386/",
+        "sourceType": "secondary_apartment_coordinate",
+        "crs": "EPSG:4326",
+        "note": "기존 아파트 자료의 단지 대표좌표이다. 세대·동별 주소 또는 단지 전체 경계와의 대조가 아니다."
+      },
+      "evidence": {
+        "elementary": {
+          "polygonRecord": {
+            "OBJECTID": 1896,
+            "HAKGUDO_ID": "Z000101426",
+            "HAKGUDO_NM": "서광초통학구역",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2016-08-12",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 1386
+          },
+          "schoolZoneLinkRecord": {
+            "학구ID": "Z000101426",
+            "학교ID": "B000003279",
+            "학교명": "서광초등학교",
+            "학교급구분": "초등학교",
+            "시도교육청코드": "7140000",
+            "시도교육청명": "전남광주통합특별시교육청",
+            "교육지원청코드": "7402000",
+            "교육지원청명": "전남광주통합특별시서부교육지원청",
+            "데이터기준일자": "2026-09-20"
+          },
+          "pointProjected": [
+            188014.1505099849,
+            284274.406482377
+          ],
+          "distanceToZoneBoundaryMeters": 147.63,
+          "spatialPredicate": "polygon.covers(point)"
+        },
+        "middle": {
+          "polygonRecord": {
+            "OBJECTID": 1191,
+            "HAKGUDO_ID": "Z000200121",
+            "HAKGUDO_NM": "3학교군",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2024-06-18",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 1322
+          },
+          "pointProjected": [
+            188014.1505099849,
+            284274.406482377
+          ],
+          "distanceToZoneBoundaryMeters": 1875.53,
+          "spatialPredicate": "polygon.covers(point)"
+        }
+      }
+    },
+    {
+      "apartmentId": "dongcheon-centralpark",
+      "elementaryNames": [
+        "빛고을초등학교"
+      ],
+      "elementarySchoolIds": [
+        "B000003207"
+      ],
+      "elementaryZoneId": "Z000101421",
+      "middleGroupName": "제3학교군",
+      "middleZoneId": "Z000200121",
+      "assignmentConfirmed": false,
+      "representativeCoordinate": {
+        "lat": 35.169391,
+        "lng": 126.858238,
+        "sourceUrl": "https://korea-rich.com/apt/29140-301/",
+        "sourceType": "secondary_apartment_coordinate",
+        "crs": "EPSG:4326",
+        "note": "기존 아파트 자료의 단지 대표좌표이다. 세대·동별 주소 또는 단지 전체 경계와의 대조가 아니다."
+      },
+      "evidence": {
+        "elementary": {
+          "polygonRecord": {
+            "OBJECTID": 1828,
+            "HAKGUDO_ID": "Z000101421",
+            "HAKGUDO_NM": "빛고을초통학구역",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2016-08-12",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 1497
+          },
+          "schoolZoneLinkRecord": {
+            "학구ID": "Z000101421",
+            "학교ID": "B000003207",
+            "학교명": "빛고을초등학교",
+            "학교급구분": "초등학교",
+            "시도교육청코드": "7140000",
+            "시도교육청명": "전남광주통합특별시교육청",
+            "교육지원청코드": "7402000",
+            "교육지원청명": "전남광주통합특별시서부교육지원청",
+            "데이터기준일자": "2026-09-20"
+          },
+          "pointProjected": [
+            187085.5278125732,
+            285896.6827485515
+          ],
+          "distanceToZoneBoundaryMeters": 194.2,
+          "spatialPredicate": "polygon.covers(point)"
+        },
+        "middle": {
+          "polygonRecord": {
+            "OBJECTID": 1191,
+            "HAKGUDO_ID": "Z000200121",
+            "HAKGUDO_NM": "3학교군",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2024-06-18",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 1322
+          },
+          "pointProjected": [
+            187085.5278125732,
+            285896.6827485515
+          ],
+          "distanceToZoneBoundaryMeters": 350.98,
+          "spatialPredicate": "polygon.covers(point)"
+        }
+      }
+    },
+    {
+      "apartmentId": "nongseong-sk",
+      "elementaryNames": [
+        "광주광천초등학교"
+      ],
+      "elementarySchoolIds": [
+        "B000003269"
+      ],
+      "elementaryZoneId": "Z000101387",
+      "middleGroupName": "제3학교군",
+      "middleZoneId": "Z000200121",
+      "assignmentConfirmed": false,
+      "representativeCoordinate": {
+        "lat": 35.155307,
+        "lng": 126.886477,
+        "sourceUrl": "https://korea-rich.com/apt/29140-393/",
+        "sourceType": "secondary_apartment_coordinate",
+        "crs": "EPSG:4326",
+        "note": "기존 아파트 자료의 단지 대표좌표이다. 세대·동별 주소 또는 단지 전체 경계와의 대조가 아니다."
+      },
+      "evidence": {
+        "elementary": {
+          "polygonRecord": {
+            "OBJECTID": 6825,
+            "HAKGUDO_ID": "Z000101387",
+            "HAKGUDO_NM": "광주광천초통학구역",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2026-03-01",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 6379
+          },
+          "schoolZoneLinkRecord": {
+            "학구ID": "Z000101387",
+            "학교ID": "B000003269",
+            "학교명": "광주광천초등학교",
+            "학교급구분": "초등학교",
+            "시도교육청코드": "7140000",
+            "시도교육청명": "전남광주통합특별시교육청",
+            "교육지원청코드": "7402000",
+            "교육지원청명": "전남광주통합특별시서부교육지원청",
+            "데이터기준일자": "2026-09-20"
+          },
+          "pointProjected": [
+            189656.30990447226,
+            284330.8516404142
+          ],
+          "distanceToZoneBoundaryMeters": 190.27,
+          "spatialPredicate": "polygon.covers(point)"
+        },
+        "middle": {
+          "polygonRecord": {
+            "OBJECTID": 1191,
+            "HAKGUDO_ID": "Z000200121",
+            "HAKGUDO_NM": "3학교군",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2024-06-18",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 1322
+          },
+          "pointProjected": [
+            189656.30990447226,
+            284330.8516404142
+          ],
+          "distanceToZoneBoundaryMeters": 682.1,
+          "spatialPredicate": "polygon.covers(point)"
+        }
+      }
+    },
+    {
+      "apartmentId": "mareuk-yangwoo",
+      "elementaryNames": [
+        "광주상무초등학교"
+      ],
+      "elementarySchoolIds": [
+        "B000003266"
+      ],
+      "elementaryZoneId": "Z000101394",
+      "middleGroupName": "제3학교군",
+      "middleZoneId": "Z000200121",
+      "assignmentConfirmed": false,
+      "representativeCoordinate": {
+        "lat": 35.141623,
+        "lng": 126.851059,
+        "sourceUrl": "https://korea-rich.com/apt/29140-402/",
+        "sourceType": "secondary_apartment_coordinate",
+        "crs": "EPSG:4326",
+        "note": "기존 아파트 자료의 단지 대표좌표이다. 세대·동별 주소 또는 단지 전체 경계와의 대조가 아니다."
+      },
+      "evidence": {
+        "elementary": {
+          "polygonRecord": {
+            "OBJECTID": 4025,
+            "HAKGUDO_ID": "Z000101394",
+            "HAKGUDO_NM": "광주상무초통학구역",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2023-09-19",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 3538
+          },
+          "schoolZoneLinkRecord": {
+            "학구ID": "Z000101394",
+            "학교ID": "B000003266",
+            "학교명": "광주상무초등학교",
+            "학교급구분": "초등학교",
+            "시도교육청코드": "7140000",
+            "시도교육청명": "전남광주통합특별시교육청",
+            "교육지원청코드": "7402000",
+            "교육지원청명": "전남광주통합특별시서부교육지원청",
+            "데이터기준일자": "2026-09-20"
+          },
+          "pointProjected": [
+            186426.9116059942,
+            282816.95783719287
+          ],
+          "distanceToZoneBoundaryMeters": 309.99,
+          "spatialPredicate": "polygon.covers(point)"
+        },
+        "middle": {
+          "polygonRecord": {
+            "OBJECTID": 1191,
+            "HAKGUDO_ID": "Z000200121",
+            "HAKGUDO_NM": "3학교군",
+            "HAKGUDO_GB": "0",
+            "SD_CD": "12",
+            "SGG_CD": "240",
+            "EDU_UP_CD": "7140000",
+            "EDU_UP_NM": "전남광주통합특별시교육청",
+            "EDU_CD": "7402000",
+            "EDU_NM": "전남광주통합특별시서부교육지원청",
+            "CRE_DT": "2016-08-12",
+            "UPD_DT": "2024-06-18",
+            "BASE_DT": "2026-09-20",
+            "ESRI_OID": 1322
+          },
+          "pointProjected": [
+            186426.9116059942,
+            282816.95783719287
+          ],
+          "distanceToZoneBoundaryMeters": 1645.7,
+          "spatialPredicate": "polygon.covers(point)"
+        }
+      }
+    }
+  ],
+  "middle": {
+    "status": "official_announcements_and_general_guidance_verified_attachment_mapping_not_read",
+    "uiSummary": "중학교 배정은 출신 초등학교와 해당 학년도 배정계획을 함께 확인해야 합니다. 학교군에 포함된 학교와 실제 추첨에 포함되는 학교는 같지 않을 수 있습니다.",
+    "detailSummary": "서부교육지원청의 초등학교별 배정 안내는 출신 초등학교 소속 학교군을 바탕으로 학생의 통학 여건, 인근 초등학교 졸업생 수, 중학교 수용 여건 등을 종합적으로 고려하며, 실제 추첨 대상 학교는 연도별로 달라질 수 있다고 설명합니다. 이 설명은 2023-12-27 게시된 참고 안내에서 확인했으며, 2027학년도 개별 배정은 새 시행계획과 학교별 안내를 확인해야 합니다.",
+    "sourceIds": [
+      "middle-general-2023",
+      "middle-board"
+    ],
+    "assignmentLists": [],
+    "elementaryToMiddleMap": {},
+    "mappingStatus": "not_verified",
+    "mappingLimit": "2026.2 기준 초등학교별 배정 가능 중학교 현황 및 2027학년도 시행계획은 게시 목록에서 존재·날짜를 확인했으나 원문 첨부는 교육지원청 서버 503/타임아웃으로 읽지 못했습니다. 초교별 학교명단 또는 성별 배정범위를 생성하지 않았습니다.",
+    "yearReferences": [
+      {
+        "schoolYear": 2026,
+        "label": "2026학년도 입학 배정 및 재배정 업무 시행계획",
+        "publishedAt": "2025-10-21",
+        "sourceUrl": "https://seobu.jge.go.kr/board.php?acode=24169&cate=0&id=230&mode=v&order=2&page=1",
+        "verification": "공식 게시 제목·게시일·첨부명 확인, 첨부 원문 미열람"
+      },
+      {
+        "schoolYear": 2026,
+        "label": "초등학교별 배정 가능 중학교 현황(26.2.기준)",
+        "asOf": "2026-02",
+        "publishedAt": "2026-06-30",
+        "sourceUrl": "https://seobu.jge.go.kr/board.php?id=230&sid=19",
+        "verification": "공식 목록에서 존재·게시일 확인, 개별 게시물 식별자 및 첨부 원문 미확보"
+      },
+      {
+        "schoolYear": 2027,
+        "label": "2027학년도 중학교 입학 배정 및 재배정 업무 시행 계획 공고",
+        "noticeNumber": "제2026-78호",
+        "publishedAt": "2026-10-22",
+        "sourceUrl": "https://seobu.jge.go.kr/board.php?id=230&sid=19",
+        "verification": "공식 게시 목록 및 홈페이지 공고 발췌 확인. 첨부 계획 원문 미열람",
+        "scope": "2027학년도 신입생 대상 공고. 2026학년도 재학생 기준으로 소급 적용하지 않음",
+        "dateNote": "중학교 입학 배정 게시판은2026-10-22, 공식 홈페이지 공지사항 카드에는2026-10-21 표시. 사이트 사용자 표시는 게시판 기준2026-10-22로 통일 권장"
+      }
+    ],
+    "transferSummary": "타 시·도 또는 다른 학교군에서 이사하는 중학생의 전입학은 거주지 이전·학교군·전입학 요건과 학교의 수용 가능 여부를 별도로 확인합니다. 새 주소지의 학교군이 같다는 사실만으로 원하는 학교 전학이 확정되지 않습니다.",
+    "transferSourceIds": [
+      "middle-transfer"
+    ],
+    "officialGuidanceButton": {
+      "label": "초등학교별 중학교 배정 안내",
+      "url": "https://seobu.jge.go.kr/board.php?id=230&sid=19"
+    },
+    "schoolGroupReference": {
+      "displayUse": "일반 학교군 제도 설명 자료에 한정. 개별 아파트 또는 초교의 배정 가능 목록으로 사용하지 않음.",
+      "sourceId": "middle-transfer",
+      "version": "교육청 일반 안내 페이지. 적용 학년도나 최종 갱신일을 확인하지 못했으므로 2026·2027 확정 고시표로 표시하지 않음.",
+      "groups": [
+        {
+          "name": "제2학교군",
+          "coeducational": [
+            "광주무진중학교",
+            "봉선중학교",
+            "광주서광중학교",
+            "주월중학교",
+            "금당중학교",
+            "풍암중학교",
+            "진남중학교",
+            "숭의중학교",
+            "효천중학교"
+          ],
+          "boysOnly": [
+            "문성중학교",
+            "광주동성중학교"
+          ],
+          "girlsOnly": [
+            "광주수피아여자중학교",
+            "대성여자중학교",
+            "동아여자중학교",
+            "광주동성여자중학교"
+          ]
+        },
+        {
+          "name": "제3학교군",
+          "coeducational": [
+            "상무중학교",
+            "광주효광중학교",
+            "광주화정중학교",
+            "광주중학교",
+            "치평중학교",
+            "상일중학교",
+            "금호중학교",
+            "광주동명중학교",
+            "전남중학교",
+            "운리중학교",
+            "유덕중학교",
+            "대자중학교",
+            "광주송원중학교"
+          ],
+          "boysOnly": [
+            "광덕중학교",
+            "광주서석중학교"
+          ],
+          "girlsOnly": []
+        }
+      ],
+      "genderNote": "일반 학교군 표의 남녀공학·남·여 구분만 옮겼습니다. 초교별 실제 추첨표의 성별 목록을 확인한 것은 아닙니다."
+    }
+  },
+  "high": {
+    "status": "official_published_pdf_read_and_page_visually_verified",
+    "schoolYear": 2027,
+    "yearLabel": "2027학년도 입학 기준",
+    "jurisdictionScope": "종전 광주광역시 관할구역",
+    "documentTitle": "2027학년도 전남광주통합특별시(구 광주) 고등학교 신입생 입학 전형요강",
+    "authority": "전남광주통합특별시교육청",
+    "noticeNumber": "제2026-10007호",
+    "publishedAt": "2026-07-10",
+    "sourceUrl": "https://hischool.go.kr/entrance/sido/view.do?nttId=21266",
+    "documentUrl": "https://hischool.go.kr/FileDown.do?atchFileId=FILE_000000000043771&fileSn=1",
+    "section": "평준화 후기 일반고 7. 학교 배정 가. 일반 배정",
+    "pdfPhysicalPage": 9,
+    "printedPage": 5,
+    "summary": "2027학년도 종전 광주 지역 평준화 일반고는 합격자를 대상으로 출신 중학교를 기준으로 GIS에서 정한 배정가능고교 범위와 학생의 희망학교를 바탕으로 추첨 배정합니다. 선지원은 정원의 20%, 후지원은 80%이며, 실제 거주지와 통학 편의 등을 함께 고려합니다. 자율형공립고·과학중점고 등은 별도 지원·배정 기준이 적용되므로 아파트 주소만으로 입학 고등학교를 확정할 수 없습니다.",
+    "uiSummary": "고교는 아파트 주소만으로 정해지지 않아요. 2027학년도 평준화 일반고는 출신 중학교에 따른 배정가능고교와 희망학교를 바탕으로 추첨합니다.",
+    "principles": [
+      "평준화 일반고 합격자를 대상으로 출신중학교 기준 GIS 배정가능고교를 설정하고 희망학교를 추첨함.",
+      "일반 배정의 선지원추첨배정 20%, 후지원추첨배정 80%. 선지원 2개교 필수, 지원순서와 무관하게 성적등급별 추첨.",
+      "후지원 학교는 중학교별 배정가능고교 목록에서 선택. 단지에서 가까운 고교 순서가 배정기준은 아님.",
+      "실제 거주지 및 통학 편의 등을 종합적으로 고려한다는 단서가 있음.",
+      "자율형공립고·과학중점고는 선지원(1~3지망)으로만 지원하고 선지원 100% 추첨. 자공고는 1지망부터 우선 배정.",
+      "전입학, 특례입학, 특별배정, 비평준화고·특성화고·특목고는 각각의 별도 기준 확인 필요."
+    ],
+    "sourceIds": [
+      "high-2027-pdf",
+      "high-official-answer"
+    ],
+    "notes": [
+      "고입정보포털 게시물의 최초 작성일은2026-04-01이지만 첨부 PDF 공고 표지는2026-07-10. 문서 공고일을 별도 기록했습니다.",
+      "공식 배포 PDF 첫 장은 공고이고 두 번째 속표지에 전형요강(안) 표기가 남아 있습니다. 사이트에서는 공식 공고 첨부 내용으로 설명하되 별도의 최종 확정본 검증을 했다고 표현하지 않습니다.",
+      "본 자료는 2027학년도 신입생 요강입니다. 2026학년도 현재 재학생의 전학 가능 학교를 결정하는 자료가 아닙니다."
+    ],
+    "officialGuidanceButton": {
+      "label": "2027학년도 고교 입학 공식 안내",
+      "url": "https://hischool.go.kr/entrance/sido/view.do?nttId=21266"
+    }
+  },
+  "policySources": [
+    {
+      "id": "middle-board",
+      "title": "서부교육지원청 중학교 입학 배정 게시판",
+      "url": "https://seobu.jge.go.kr/board.php?id=230&sid=19",
+      "sourceType": "official",
+      "retrieval": "web search indexed page; direct page/attachment fetch failed503 or timeout"
+    },
+    {
+      "id": "middle-general-2023",
+      "title": "초등학교별 중학교 입학 배정 가능 학교 안내",
+      "publishedAt": "2023-12-27",
+      "url": "https://seobu.jge.go.kr/board.php?acode=22585&id=230&mode=v",
+      "sourceType": "official",
+      "retrieval": "official indexed post body read; attachment not read"
+    },
+    {
+      "id": "middle-transfer",
+      "title": "교육청 초·중학교 전편입학 안내·중학교 진학 학교군별 기준표",
+      "url": "https://www.gen.go.kr/sub/page.php?page_code=civil_04_01_02",
+      "sourceType": "official",
+      "retrieval": "official indexed body read, direct open timeout",
+      "versionNote": "학년도·최종갱신일 미표시"
+    },
+    {
+      "id": "high-2027-pdf",
+      "title": "2027학년도 전남광주통합특별시(구 광주) 고등학교 신입생 입학 전형요강",
+      "url": "https://hischool.go.kr/entrance/sido/view.do?nttId=21266",
+      "documentUrl": "https://hischool.go.kr/FileDown.do?atchFileId=FILE_000000000043771&fileSn=1",
+      "sourceType": "official",
+      "retrieval": "official HTML and attached PDF downloaded, text extracted; physical page9 rendered and inspected"
+    },
+    {
+      "id": "high-official-answer",
+      "title": "[RE]고등학교배정·진로진학과 공식 답변",
+      "publishedAt": "2026-05-27",
+      "url": "https://gen.go.kr/xboard/board.php?keyset=&mode=view&number=456254&page=1&sCat=0&searchword=&tbnum=470",
+      "sourceType": "official",
+      "retrieval": "official indexed answer body read; direct open timeout"
+    }
+  ]
+}
